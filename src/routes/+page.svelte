@@ -8,18 +8,20 @@
 	}
 </script>
 
-<section class="prose-primary prose mb-4">
+<section class="prose-primary prose">
 	<h2>Herzlich Willkommen...</h2>
 	<p>hier im Herzog-Ernst-Gymnasium. Bevor du startest, wähle bitte deinen Spielmodus aus:</p>
 </section>
 
 <section class="grid grid-cols-2 m-auto max-w-md gap-3">
-	<button
-		on:click={() => showToast('Im Gebäude')}
-		class="p-2 rounded bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
-	>
-		Im Gebäude
-	</button>
+	<a href="/template/qr">
+		<button
+			on:click={() => showToast('Im Gebäude')}
+			class="p-2 rounded bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
+		>
+			Im Gebäude
+		</button>
+	</a>
 	<button
 		on:click={() => showToast('Von Zuhause')}
 		class="p-2 rounded bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
