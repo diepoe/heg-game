@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
+	import { Haptics, ImpactStyle } from '@capacitor/haptics';
 
 	let res: string = '';
 	let scanning: boolean = false;
@@ -20,6 +21,7 @@
 				res = result.content;
 			}
 		}
+		await Haptics.impact({ style: ImpactStyle.Medium });
 		scanning = false;
 	};
 
