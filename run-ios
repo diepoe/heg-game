@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+pnpm build && npx cap sync && npx cap run ios
