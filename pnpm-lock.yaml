@@ -6,6 +6,7 @@ specifiers:
   '@capacitor/assets': ^2.0.4
   '@capacitor/cli': ^4.6.2
   '@capacitor/core': ^4.6.2
+  '@capacitor/haptics': ^4.1.0
   '@capacitor/ios': ^4.6.2
   '@capacitor/toast': ^4.1.0
   '@sveltejs/adapter-static': ^1.0.0
@@ -33,6 +34,7 @@ dependencies:
   '@capacitor/assets': 2.0.4_typescript@4.9.4
   '@capacitor/cli': 4.6.2
   '@capacitor/core': 4.6.2
+  '@capacitor/haptics': 4.1.0_@capacitor+core@4.6.2
   '@capacitor/ios': 4.6.2_@capacitor+core@4.6.2
   '@capacitor/toast': 4.1.0_@capacitor+core@4.6.2
 
@@ -176,6 +178,14 @@ packages:
     resolution: {integrity: sha512-M/KpAg+peft/HTb7svLiKHxjbll67ybs1vEqhZuvjXlwro53NxNXR4YJS7+wNXZSiA4Kxjtf+a754xGgZcMarA==}
     dependencies:
       tslib: 2.4.1
+    dev: false
+
+  /@capacitor/haptics/4.1.0_@capacitor+core@4.6.2:
+    resolution: {integrity: sha512-gAIFy50e1VZPdokRFLkl8Y+yZYB3e4brd5yu9DRShbWbheruwU34TxtG5C1NANvq4mbXd3tMXzBi59Q5JFyTHA==}
+    peerDependencies:
+      '@capacitor/core': ^4.0.0
+    dependencies:
+      '@capacitor/core': 4.6.2
     dev: false
 
   /@capacitor/ios/4.6.2_@capacitor+core@4.6.2:
