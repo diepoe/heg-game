@@ -34,12 +34,16 @@
 	"type": "module",
 	"dependencies": {
 		"@capacitor-community/barcode-scanner": "^3.0.1",
+		"@capacitor-community/sqlite": "4.6.1-2",
 		"@capacitor/android": "^4.6.2",
 		"@capacitor/assets": "^2.0.4",
 		"@capacitor/cli": "^4.6.2",
 		"@capacitor/core": "^4.6.2",
+		"@capacitor/geolocation": "^4.1.0",
 		"@capacitor/haptics": "^4.1.0",
 		"@capacitor/ios": "^4.6.2",
-		"@capacitor/toast": "^4.1.0"
+		"@capacitor/toast": "^4.1.0",
+		"@types/node": "^18.11.18",
+		"sql.js": "^1.8.0"
 	}
 }
