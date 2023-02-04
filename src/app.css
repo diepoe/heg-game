@@ -7,6 +7,6 @@
 		margin-top: constant(safe-area-inset-top);
 		margin-top: env(safe-area-inset-top);
 
-		@apply max-w-full touch-none overflow-hidden min-h-screen;
+		@apply max-w-full touch-none select-none overflow-hidden min-h-screen;
 	}
 }
