@@ -23,7 +23,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>To be able to scan QR-codes</string>
+	<string>Der Kamerazugriff wird benötigt, um QR-Codes einlesen zu können.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen.storyboard</string>
 	<key>UIMainStoryboardFile</key>
@@ -46,8 +46,8 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Der Standort wird zur Assistenz in der Gebäudeführung benötigt</string>
+	<string>Der Standort wird zur besseren Gebäudeführung benötigt</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Der Standort wird zur Assistenz in der Gebäudeführung benötigt</string>
+	<string>Der Standort wird zur besseren Gebäudeführung benötigt</string>
 </dict>
 </plist>
