@@ -5,6 +5,9 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
+			blur: {
+				xs: '2px',
+			},
 			colors: {
 				primary: colors.blue
 			}

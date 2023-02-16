@@ -25,7 +25,7 @@
 	<a
 		href="/"
 		on:click={() => showToast('Von Zuhause')}
-		class="p-2 rounded grid place-items-center bg-slate-600 text-slate-50 italic"
+		class="p-2 rounded blur-xs grid place-items-center bg-primary-600 text-slate-50 disabled cursor-not-allowed"
 	>
 		Von Zuhause
 	</a>
