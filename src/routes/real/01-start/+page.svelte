@@ -8,7 +8,7 @@
 	}**/
 </script>
 
-<OnboardingWrapper>
+<OnboardingWrapper delay={true}>
 	<li class="grid place-items-center prose prose-invert">
 		<h1>Start Game</h1>
 	</li>
