@@ -23,18 +23,18 @@
 			scannen:
 		</TextWrapper>
 		<button
-			class="p-2 rounded bg-green-600 text-white max-w-fit h-auto"
+			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto"
 			on:click={() => requestCameraPermission()}
 		>
-			Click here to allow camera access
+			Kamerazugriff erlauben
 		</button>
 	</li>
 	<li class="grid place-items-center">
 		<button
-			class="p-2 rounded bg-green-600 text-white max-w-fit h-auto"
+			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto"
 			on:click={() => requestGeolocationPermission()}
 		>
-			Click here to allow Geolocation access
+			Standortzugriff erlauben
 		</button>
 	</li>
 	<li class="grid place-items-center">
