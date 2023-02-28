@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	//TODO: implement that the delay is only implemented when passed down via props
 	export let delay = false;
 </script>
 
