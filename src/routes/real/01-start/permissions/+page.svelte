@@ -23,7 +23,7 @@
 			scannen:
 		</TextWrapper>
 		<button
-			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto"
+			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
 			on:click={() => requestCameraPermission()}
 		>
 			Kamerazugriff erlauben
@@ -31,7 +31,7 @@
 	</li>
 	<li class="grid place-items-center">
 		<button
-			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto"
+			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
 			on:click={() => requestGeolocationPermission()}
 		>
 			Standortzugriff erlauben
