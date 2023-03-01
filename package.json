@@ -44,6 +44,7 @@
 		"@capacitor/ios": "^4.6.2",
 		"@capacitor/toast": "^4.1.0",
 		"@types/node": "^18.11.18",
-		"sql.js": "^1.8.0"
+		"sql.js": "^1.8.0",
+		"validator": "^13.9.0"
 	}
 }
