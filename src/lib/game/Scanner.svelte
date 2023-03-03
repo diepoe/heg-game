@@ -19,7 +19,7 @@
 			console.log(result.content);
 
 			if (result.content != null) {
-				res = result.content;
+				res = result.content + '';
 			}
 		}
 		await Haptics.impact({ style: ImpactStyle.Medium });
