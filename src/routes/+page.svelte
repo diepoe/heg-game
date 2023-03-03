@@ -29,3 +29,10 @@
 		Von Zuhause
 	</a>
 </section>
+
+<section class="grid grid-cols-2 m-auto max-w-md gap-3 px-4">
+	<TextWrapper>
+		<a href="/template">Template-Pages</a>
+	</TextWrapper>
+</section>
+
