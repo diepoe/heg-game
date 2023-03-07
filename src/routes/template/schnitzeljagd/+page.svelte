@@ -36,11 +36,11 @@
 			Pausenhalle Nord
 		</li>
 		<li>
-			<input type="checkbox" />
+			<input type="checkbox" on:click={()=>showToast("Biologie Trakt", false)}/>
 			Biologie Trakt
 		</li>
 		<li>
-			<input type="checkbox" />
+			<input type="checkbox" on:click={()=>showToast("Informatikraum", false)}/>
 			Informatikraum
 		</li>
 	</ul>
