@@ -5,5 +5,6 @@
 <TextWrapper>
     <li><a href="/template/kompass">Kompass</a></li>
     <li><a href="/template/room">Raumdetails</a></li>
+    <li><a href="/template/schnitzeljagd">Schnitzeljagd</a></li>
     <li><a href="/template/qr">Scanner</a></li>
 </TextWrapper>
