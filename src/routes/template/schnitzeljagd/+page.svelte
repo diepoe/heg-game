@@ -12,7 +12,7 @@
         }
 
 		Toast.show({
-			text: "Die Antwort ist" + antwort +  "!"
+			text: "Die Antwort ist " + antwort +  "!"
 		});
 	}
 </script>
