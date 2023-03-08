@@ -1,4 +1,13 @@
-<img src="https://www.heg-uelzen.de/wp-content/uploads/2022/07/1-08.JPG" alt="Bild Atrium" />
+<script lang="ts">
+	import { Body } from 'svelte-body';
+</script>
+
+<Body style="margin-top: 0px !important;" />
+<img
+	src="https://www.heg-uelzen.de/wp-content/uploads/2022/07/1-08.JPG"
+	alt="Bild Atrium"
+	class="-mt-[env(safe-area-inset-top)]"
+/>
 
 <div class="p-10 relative -top-8 bg-white rounded-xl space-y-2 w-full">
 	<heading class="prose">
@@ -14,16 +23,9 @@
 	</p>
 </div>
 
-	<a
-		href="#"
-		class="bg-primary-600 rounded-lg grid place-items-center mx-9 absolute bottom-8 w-[80%] p-2 text-white text-sm shadow-lg shadow-primary-500"
-	>
-		Zum nächsten Raum
-	</a>
-
-
-<style>
-	:global(body) {
-		margin-top: 0px !important;
-	}
-</style>
+<a
+	href="/template/schnitzeljagd"
+	class="bg-primary-600 rounded-lg grid place-items-center mx-9 absolute bottom-8 w-[80%] p-2 text-white text-sm shadow-lg shadow-primary-500"
+>
+	Zum nächsten Raum
+</a>
