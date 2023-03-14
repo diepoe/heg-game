@@ -1,0 +1,192 @@
+[
+    {
+        "id": "cafeteria",
+        "name": "Cafeteria",
+        "description": "Die Cafeteria",
+        "hintsToFind": [
+            "Essen",
+            "Mittagspause",
+            "kleiner Ausgang zum Schulhof"
+        ],
+        "etage": "-1",
+        "visited": "false"
+    },
+    {
+        "id": "",
+        "name": "Schülerfirma",
+        "description": "Die Schülerfirma",
+        "hintsToFind": [
+            "Schülerzeitung",
+            "Keller"
+        ],
+        "etage": "-1",
+        "visited": "false"
+    },
+    {
+        "id": "abimonumente",
+        "name": "Abimonumente",
+        "description": "Der Korridor mit den Abimonumnten",
+        "hintsToFind": [
+            "Abi Mottos",
+            "Oberstufenraum"
+        ],
+        "etage": "-1",
+        "visited": "false"
+    },
+    {
+        "id": "pausenhalle_sued",
+        "name": "Pausenhalle Süd",
+        "description": "Die südliche Pausenhalle",
+        "hintsToFind": [
+            "Jungs toilette",
+            "Kunstvitrine",
+            "Hausaufgabenhilfe",
+            "Atrium Eingang"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "pausenhalle_nord",
+        "name": "Pausenhalle Nord",
+        "description": "Die nördliche Pausenhalle",
+        "hintsToFind": [
+            "Vertretungsplan",
+            "Mensaautomat",
+            "Atrium Eingang",
+            "Zugang zum Lehrerzimmer"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "bio",
+        "name": "Biologietrakt",
+        "description": "Der Seitengang bei den Biologieräumen",
+        "hintsToFind": [
+            "Ausblick zum Atrium",
+            "Aquarium",
+            "Mikroskope"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "atrium",
+        "name": "Atrium",
+        "description": "Der Innengarten der Schule",
+        "hintsToFind": [
+            "Ernie",
+            "Enten",
+            "Garten",
+            "Aufenthaltsbereich Oberstufe"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "sekretariat",
+        "name": "Sekretariat",
+        "description": "Das Sekretariat",
+        "hintsToFind": [
+            "Schulleiterbüro"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "bibliothek",
+        "name": "Bibliothek",
+        "description": "die eigene Bibliothek der Schule",
+        "hintsToFind": [
+            "Bücher",
+            "Pause",
+            "Filmleihe"
+        ],
+        "etage": "0",
+        "visited": "false"
+    },
+    {
+        "id": "informatik",
+        "name": "Informatikraum",
+        "description": "Der Informatik Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Computer",
+            "Arne Bösser"
+        ],
+        "etage": "1",
+        "visited": "false"
+    },
+    {
+        "id": "physik",
+        "name": "Physikraum",
+        "description": "Der Physik Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Versuche",
+            "Newton"
+        ],
+        "etage": "1",
+        "visited": "false"
+    },
+    {
+        "id": "politk",
+        "name": "Politkraum",
+        "description": "Der Politik Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Jugend Debattiert"
+        ],
+        "etage": "1",
+        "visited": "false"
+    },
+    {
+        "id": "erdkunde",
+        "name": "Erdkunderaum",
+        "description": "Der Erdkunderaum Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Welkarten",
+            "Globus"
+        ],
+        "etage": "1",
+        "visited": "false"
+    },
+    {
+        "id": "kunst",
+        "name": "Kunstraum",
+        "description": "Der Kunst Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Farbe",
+            "Kreativität"
+        ],
+        "etage": "2",
+        "visited": "false"
+    },
+    {
+        "id": "musik",
+        "name": "Musikraum",
+        "description": "Der Musik Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Instrumente",
+            "Rythmus"
+        ],
+        "etage": "2",
+        "visited": "false"
+    },
+    {
+        "id": "chemie",
+        "name": "Chemie",
+        "description": "Der Chemie Klassenraum",
+        "hintsToFind": [
+            "Fachraum",
+            "Versuche",
+            "Reagenzglas"
+        ],
+        "etage": "2",
+        "visited": "false"
+    }
+]

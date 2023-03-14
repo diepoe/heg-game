@@ -13,7 +13,7 @@
 		<h1>Start Game</h1>
 	</li>
 	<li class="grid place-items-center">
-		<a href="/real/02-game" class="p-4 rounded-full border border-white hover:bg-white group">
+		<a href="/real/02-game/a-scanner" class="p-4 rounded-full border border-white hover:bg-white group">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
