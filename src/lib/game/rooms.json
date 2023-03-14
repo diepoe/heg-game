@@ -29,7 +29,7 @@
         "id":"pausenhalle_sued",
         "name": "Pausenhalle Süd",
         "description": "Die südliche Pausenhalle",
-        "hintsToFind": ["Jungs toilette","Kunstvitrine","Hausaufgabenhilfe"],
+        "hintsToFind": ["Jungs toilette","Kunstvitrine","Hausaufgabenhilfe","Atrium Eingang"],
         "etage":"0",
         "visited":"false"
     },
@@ -49,15 +49,90 @@
         "etage":"0",
         "visited":"false"
     },
-   
+    {
+        "id":"",
+        "name": "Atrium",
+        "description": "Der Innengarten der Schule",
+        "hintsToFind": ["Ernie","Enten","Garten","Aufenthaltsbereich Oberstufe"],
+        "etage":"0",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Sekretariat",
+        "description": "Das Sekretariat",
+        "hintsToFind": ["Schulleiterbüro"],
+        "etage":"0",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Bibliothek",
+        "description": "die eigene Bibliothek der Schule",
+        "hintsToFind": ["Bücher","Pause","Filmleihe"],
+        "etage":"0",
+        "visited":"false"
+    },
 
     {
         "id":"",
         "name": "Informatikraum",
         "description": "Der Informatik Klassenraum",
-        "hintsToFind": ["Computer","Arne Bösser"],
+        "hintsToFind": ["Fachraum","Computer","Arne Bösser"],
         "etage":"1",
         "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Physikraum",
+        "description": "Der Physik Klassenraum",
+        "hintsToFind": ["Fachraum","Versuche","Newton"],
+        "etage":"1",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Politkraum",
+        "description": "Der Politik Klassenraum",
+        "hintsToFind": ["Fachraum","Jugend Debattiert"],
+        "etage":"1",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Erdkunderaum",
+        "description": "Der Erdkunderaum Klassenraum",
+        "hintsToFind": ["Fachraum","Welkarten","Globus"],
+        "etage":"1",
+        "visited":"false"
+    },
+
+
+    {
+        "id":"",
+        "name": "Kunstraum",
+        "description": "Der Kunst Klassenraum",
+        "hintsToFind": ["Fachraum","Farbe","Kreativität"],
+        "etage":"2",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Musikraum",
+        "description": "Der Musik Klassenraum",
+        "hintsToFind": ["Fachraum","Instrumente","Rythmus"],
+        "etage":"2",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Chemie",
+        "description": "Der Chemie Klassenraum",
+        "hintsToFind": ["Fachraum","Versuche","Reagenzglas"],
+        "etage":"2",
+        "visited":"false"
     }
+
+
     
 ]
