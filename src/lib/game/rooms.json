@@ -1,6 +1,32 @@
 [
     {
         "id":"",
+        "name": "Cafeteria",
+        "description": "Die Cafeteria",
+        "hintsToFind": ["Essen","Mittagspause","kleiner Ausgang zum Schulhof"],
+        "etage":"-1",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Schülerfirma",
+        "description": "Die Schülerfirma",
+        "hintsToFind": ["Schülerzeitung","Keller"],
+        "etage":"-1",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Abimonumente",
+        "description": "Der Korridor mit den Abimonumnten",
+        "hintsToFind": ["Abi Mottos","Oberstufenraum"],
+        "etage":"-1",
+        "visited":"false"
+    },
+
+
+    {
+        "id":"pausenhalle_sued",
         "name": "Pausenhalle Süd",
         "description": "Die südliche Pausenhalle",
         "hintsToFind": ["Jungs toilette","Kunstvitrine","Hausaufgabenhilfe"],
@@ -23,6 +49,8 @@
         "etage":"0",
         "visited":"false"
     },
+   
+
     {
         "id":"",
         "name": "Informatikraum",
