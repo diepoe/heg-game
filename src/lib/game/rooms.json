@@ -1,7 +1,35 @@
 [
     {
+        "id":"",
         "name": "Pausenhalle Süd",
         "description": "Die südliche Pausenhalle",
-        "hintToFind": "großer Pebis beim Theater"
+        "hintsToFind": ["Jungs toilette","Kunstvitrine","Hausaufgabenhilfe"],
+        "etage":"0",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Pausenhalle Nord",
+        "description": "Die nördliche Pausenhalle",
+        "hintsToFind": ["Vertretungsplan","Mensaautomat","Atrium Eingang","Zugang zum Lehrerzimmer"],
+        "etage":"0",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Biologietrakt",
+        "description": "Der Seitengang bei den Biologieräumen",
+        "hintsToFind": ["Ausblick zum Atrium","Aquarium","Mikroskope"],
+        "etage":"0",
+        "visited":"false"
+    },
+    {
+        "id":"",
+        "name": "Informatikraum",
+        "description": "Der Informatik Klassenraum",
+        "hintsToFind": ["Computer","Arne Bösser"],
+        "etage":"1",
+        "visited":"false"
     }
+    
 ]
