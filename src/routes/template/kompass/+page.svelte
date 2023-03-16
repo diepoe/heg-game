@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { Geolocation } from '@capacitor/geolocation';
 
 	let heg_coord = "52,95988° N, 10,56097° O"
 

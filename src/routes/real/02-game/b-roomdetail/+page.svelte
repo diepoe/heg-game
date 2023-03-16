@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { Dialog } from '@capacitor/dialog';
 	import { Body } from 'svelte-body';
 	import { onMount } from 'svelte';
+
 	import TextWrapper from '$lib/components/TextWrapper.svelte';
 	import { roomID } from '../stores';
 	import _rooms from '../rooms.json';
@@ -10,11 +12,11 @@
 		name: string;
 		description: string;
 
-        
 		hintsToFind: string[];
 		etage: string;
 		visited: string;
 	}
+
 	let currentRoom: Room = {
 		id: 'nothing',
 		name: 'null',
@@ -24,6 +26,13 @@
 		visited: 'null'
 	};
 
+	const showAlert = async () => {
+		await Dialog.alert({
+			title: 'Fehler',
+			message: 'Der im QR-Code gespeicherte Raum ist nicht bekannt.'
+		});
+	};
+
 	onMount(() => {
 		const rooms = _rooms as Room[];
 
@@ -31,6 +40,8 @@
 
 		if (roomSearch != undefined) {
 			currentRoom = roomSearch;
+		} else {
+			showAlert();
 		}
 	});
 
@@ -41,7 +52,7 @@
 </script>
 
 <Body style="margin-top: 0px !important;" />
-<img src={"/rooms/"+currentRoom.id+".jpg"} alt="Bild Atrium" />
+<img src={'/rooms/' + currentRoom.id + '.jpg'} alt="Bild Atrium" />
 
 <div class="p-10 relative -top-8 bg-white rounded-xl space-y-2 w-full">
 	<heading class="prose">

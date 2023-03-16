@@ -4,7 +4,9 @@
 	import { goto } from '$app/navigation';
 
 	import { BarcodeScanner, SupportedFormat } from '@capacitor-community/barcode-scanner';
+	import { Dialog } from '@capacitor/dialog';
 	import { Haptics, ImpactStyle } from '@capacitor/haptics';
+
 	import TextWrapper from '$lib/components/TextWrapper.svelte';
 	import { roomID } from '../stores';
 
@@ -16,9 +18,12 @@
 		BarcodeScanner.prepare();
 	});
 
-	export function load() {
-		throw redirect(308, '/real/02-game/b-roomdetail');
-	}
+	const showAlert = async () => {
+		await Dialog.alert({
+			title: 'Fehler',
+			message: 'Der eingelesene QR-Code gehört nicht zu dem Spiel.'
+		});
+	};
 
 	const startScan = async () => {
 		scanning = true;
@@ -34,8 +39,10 @@
 					id = res.split('#')[1];
 					roomID.set(id);
 					goto('/real/02-game/b-roomdetail');
+				} else {
+					await showAlert();
+					// TODO: notify/alert the user here that the scanned qr isn't a valid qr of the game
 				}
-				// TODO: verify QR content and parse it to the store
 			}
 		}
 		await Haptics.impact({ style: ImpactStyle.Medium });
@@ -50,13 +57,7 @@
 </script>
 
 <TextWrapper invisible={scanning}>
-	<h3>
-		{#if res != ''}
-			{res}
-		{:else}
-			Scanne den QR-Code mit Anwählen des blauen Buttons!
-		{/if}
-	</h3>
+	<h3>Scanne den QR-Code mit Anwählen des blauen Buttons!</h3>
 </TextWrapper>
 
 <section class="m-auto bg-transparent w-full h-64 border-y-6 border-primary-600" />

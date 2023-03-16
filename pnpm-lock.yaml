@@ -7,7 +7,7 @@ specifiers:
   '@capacitor/assets': ^2.0.4
   '@capacitor/cli': ^4.6.2
   '@capacitor/core': ^4.6.2
-  '@capacitor/geolocation': ^4.1.0
+  '@capacitor/dialog': ^4.1.0
   '@capacitor/haptics': ^4.1.0
   '@capacitor/ios': ^4.6.2
   '@capacitor/toast': ^4.1.0
@@ -42,7 +42,7 @@ dependencies:
   '@capacitor/assets': 2.0.4_awa2wsr5thmg3i7jqycphctjfq
   '@capacitor/cli': 4.6.2
   '@capacitor/core': 4.6.2
-  '@capacitor/geolocation': 4.1.0_@capacitor+core@4.6.2
+  '@capacitor/dialog': 4.1.0_@capacitor+core@4.6.2
   '@capacitor/haptics': 4.1.0_@capacitor+core@4.6.2
   '@capacitor/ios': 4.6.2_@capacitor+core@4.6.2
   '@capacitor/toast': 4.1.0_@capacitor+core@4.6.2
@@ -203,8 +203,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /@capacitor/geolocation/4.1.0_@capacitor+core@4.6.2:
-    resolution: {integrity: sha512-hfI4MUcu1zcJPTvm0g6V3telTGwq9sCU8EnY4hFJpLedbIQeWPthCOSbFtNHAU5mVaAP1Zls3x6TsXL8TX08EA==}
+  /@capacitor/dialog/4.1.0_@capacitor+core@4.6.2:
+    resolution: {integrity: sha512-Uej4+WE6Ec445iTzLVD22fmsPfu8nW+IJyiixtzP5+ZLNhdJ5mjbMUUTUrZTbDUK8hViFRsfLo90qbeGzgMTVA==}
     peerDependencies:
       '@capacitor/core': ^4.0.0
     dependencies:

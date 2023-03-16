@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
-	import { Geolocation } from '@capacitor/geolocation';
 	import OnboardingWrapper from '$lib/components/OnboardingWrapper.svelte';
 	import TextWrapper from '$lib/components/TextWrapper.svelte';
 
@@ -10,31 +9,19 @@
 	function requestCameraPermission() {
 		BarcodeScanner.prepare();
 	}
-
-	function requestGeolocationPermission() {
-		Geolocation.requestPermissions();
-	}
 </script>
 
 <OnboardingWrapper>
 	<li class="grid place-items-center ">
 		<TextWrapper inverted={true}>
-			Wir benötigen ihre Zustimmung für den Kamerazugriff, um die spielwichtigen QR-Codes innerhalb der Schule zu
-			scannen:
+			Wir benötigen ihre Zustimmung für den Kamerazugriff, um die spielwichtigen QR-Codes innerhalb
+			der Schule zu scannen:
 		</TextWrapper>
 		<button
 			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
 			on:click={() => requestCameraPermission()}
 		>
 			Kamerazugriff erlauben
-		</button>
-	</li>
-	<li class="grid place-items-center">
-		<button
-			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
-			on:click={() => requestGeolocationPermission()}
-		>
-			Standortzugriff erlauben
 		</button>
 	</li>
 	<li class="grid place-items-center">
