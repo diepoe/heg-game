@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { redirect } from '@sveltejs/kit';
 	import { goto } from '$app/navigation';
 
 	import { BarcodeScanner, SupportedFormat } from '@capacitor-community/barcode-scanner';
@@ -8,13 +7,17 @@
 	import { Haptics, ImpactStyle } from '@capacitor/haptics';
 
 	import TextWrapper from '$lib/components/TextWrapper.svelte';
-	import { roomID } from '../stores';
+	import type { Room } from '$lib/types/room.type';
+	import { roomID, nextRoomID, rooms } from '../stores';
+	import _rooms from '../rooms.json';
 
 	let res: string = '';
 	let scanning: boolean = false;
 	let id: string = '';
 
 	onMount(() => {
+		const roomList = _rooms as Room[];
+		rooms.set(roomList);
 		BarcodeScanner.prepare();
 	});
 
@@ -24,6 +27,14 @@
 			message: 'Der eingelesene QR-Code gehört nicht zu dem Spiel.'
 		});
 	};
+
+	async function wrongRoom(wrong: string, right: string) {
+		await Dialog.alert({
+			title: 'Falscher',
+			message:
+				'Du befindest dich nicht im richtigen Raum ' + right + ', sondern im Raum ' + wrong + '!'
+		});
+	}
 
 	const startScan = async () => {
 		scanning = true;
@@ -37,11 +48,20 @@
 
 				if (res.startsWith('https://app.heg-uelzen.de/redirect#')) {
 					id = res.split('#')[1];
-					roomID.set(id);
-					goto('/real/02-game/b-roomdetail');
+					if ($nextRoomID == 'null') {
+						roomID.set(id);
+						goto('/real/02-game/b-roomdetail');
+					} else {
+						// check if the user scanned the correct room code
+						if ($nextRoomID == id) {
+							roomID.set(id);
+							goto('/real/02-game/b-roomdetail');
+						} else {
+							wrongRoom(id, $nextRoomID);
+						}
+					}
 				} else {
 					await showAlert();
-					// TODO: notify/alert the user here that the scanned qr isn't a valid qr of the game
 				}
 			}
 		}

@@ -4,18 +4,8 @@
 	import { onMount } from 'svelte';
 
 	import TextWrapper from '$lib/components/TextWrapper.svelte';
-	import { roomID } from '../stores';
-	import _rooms from '../rooms.json';
-
-	interface Room {
-		id: string;
-		name: string;
-		description: string;
-
-		hintsToFind: string[];
-		etage: string;
-		visited: string;
-	}
+	import type { Room } from '$lib/types/room.type';
+	import { roomID, currentRoomID, rooms } from '../stores';
 
 	let currentRoom: Room = {
 		id: 'nothing',
@@ -34,20 +24,15 @@
 	};
 
 	onMount(() => {
-		const rooms = _rooms as Room[];
 
-		const roomSearch = rooms.find((t) => t.id === roomIDValue);
+		const roomSearch = $rooms.find((t) => t.id === $roomID);
 
 		if (roomSearch != undefined) {
 			currentRoom = roomSearch;
+			currentRoomID.set(currentRoom.id);
 		} else {
 			showAlert();
 		}
-	});
-
-	let roomIDValue: string;
-	roomID.subscribe((value) => {
-		roomIDValue = value;
 	});
 </script>
 
@@ -61,9 +46,9 @@
 	<section class="bg-primary-600 rounded-lg  max-w-fit p-2 text-white text-sm">
 		Hauptgebäude
 	</section>
-	<p class="text-sm pt-10">
+	<TextWrapper className="pt-10">
 		{@html currentRoom.description}
-	</p>
+	</TextWrapper>
 </div>
 
 <a
