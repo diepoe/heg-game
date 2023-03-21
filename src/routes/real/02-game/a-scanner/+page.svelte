@@ -76,11 +76,11 @@
 	};
 </script>
 
-<TextWrapper invisible={scanning}>
+<TextWrapper invisible={scanning} transparent={scanning}>
 	<h3>Scanne den QR-Code mit Anwählen des blauen Buttons!</h3>
 </TextWrapper>
 
-<section class="m-auto bg-transparent w-full h-64 border-y-6 border-primary-600" />
+<section class="m-auto bg-none bg-transparent w-full h-64 border-y-6 border-primary-600" />
 
 <section class="grid min-h-screen place-items-center">
 	{#if !scanning}
