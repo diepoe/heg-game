@@ -89,7 +89,8 @@
         "name": "Sekretariat",
         "description": "Das Sekretariat",
         "hintsToFind": [
-            "Schulleiterbüro"
+            "Schulleiterbüro",
+            "Krankmeldungen"
         ],
         "etage": "0",
         "visited": "false"
@@ -136,7 +137,8 @@
         "description": "Der Politik Klassenraum",
         "hintsToFind": [
             "Fachraum",
-            "Jugend Debattiert"
+            "Jugend Debattiert",
+            "Gesellschaftswissenschafften"
         ],
         "etage": "1",
         "visited": "false"
