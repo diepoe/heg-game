@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@capacitor-community/barcode-scanner': ^3.0.1
-  '@capacitor-community/sqlite': 4.6.1-2
   '@capacitor/android': ^4.6.2
   '@capacitor/assets': ^2.0.4
   '@capacitor/cli': ^4.6.2
@@ -25,7 +24,6 @@ specifiers:
   postcss: ^8.4.21
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.8.1
-  sql.js: ^1.8.0
   svelte: ^3.54.0
   svelte-body: ^1.3.6
   svelte-check: ^3.0.1
@@ -37,7 +35,6 @@ specifiers:
 
 dependencies:
   '@capacitor-community/barcode-scanner': 3.0.1_@capacitor+core@4.6.2
-  '@capacitor-community/sqlite': 4.6.1-2_@capacitor+core@4.6.2
   '@capacitor/android': 4.6.2_@capacitor+core@4.6.2
   '@capacitor/assets': 2.0.4_awa2wsr5thmg3i7jqycphctjfq
   '@capacitor/cli': 4.6.2
@@ -47,7 +44,6 @@ dependencies:
   '@capacitor/ios': 4.6.2_@capacitor+core@4.6.2
   '@capacitor/toast': 4.1.0_@capacitor+core@4.6.2
   '@types/node': 18.11.18
-  sql.js: 1.8.0
   validator: 13.9.0
 
 devDependencies:
@@ -101,15 +97,6 @@ packages:
       '@capacitor/core': ^4.5.0
     dependencies:
       '@capacitor/core': 4.6.2
-    dev: false
-
-  /@capacitor-community/sqlite/4.6.1-2_@capacitor+core@4.6.2:
-    resolution: {integrity: sha512-xdukTk+gj3dNyU/WLwml0dbs+sDn7dHwwpxc6FqGVTrKy5xzV4tOJNSKY35CJsXbH38088xtVYGkmwnJ1p5lyw==}
-    peerDependencies:
-      '@capacitor/core': ^4.0.0
-    dependencies:
-      '@capacitor/core': 4.6.2
-      jeep-sqlite: 1.7.0
     dev: false
 
   /@capacitor/android/4.6.2_@capacitor+core@4.6.2:
@@ -630,12 +617,6 @@ packages:
     dependencies:
       '@xml-tools/parser': 1.0.11
       prettier: 2.8.3
-    dev: false
-
-  /@stencil/core/2.22.2:
-    resolution: {integrity: sha512-r+vbxsGNcBaV1VDOYW25lv4QfXTlNoIb5GpUX7rZ+cr59yqYCZC5tlV+IzX6YgHKW62ulCc9M3RYtTfHtNbNNw==}
-    engines: {node: '>=12.10.0', npm: '>=6.0.0'}
-    hasBin: true
     dev: false
 
   /@sveltejs/adapter-static/1.0.4_@sveltejs+kit@1.1.3:
@@ -2349,10 +2330,6 @@ packages:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
 
-  /immediate/3.0.6:
-    resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
-    dev: false
-
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -2483,15 +2460,6 @@ packages:
   /isexe/2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  /jeep-sqlite/1.7.0:
-    resolution: {integrity: sha512-GMie+jXyKiavRJ9FQQLZULJ9iOQPKXgEU/dBMvQwKmdOEL3A5U9LhDErHMj9KCFmoIDec9+sXdEzn+iajB7TTA==}
-    dependencies:
-      '@stencil/core': 2.22.2
-      jszip: 3.10.1
-      localforage: 1.10.0
-      sql.js: 1.8.0
-    dev: false
-
   /jest-diff/27.5.1:
     resolution: {integrity: sha512-m0NvkX55LDt9T4mctTEgnZk3fmEg3NRYutvMPWM/0iPnkFj2wIeF45O1718cMSOFO1vINkqmxqD8vE37uTEbqw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -2565,15 +2533,6 @@ packages:
     engines: {'0': node >= 0.2.0}
     dev: false
 
-  /jszip/3.10.1:
-    resolution: {integrity: sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==}
-    dependencies:
-      lie: 3.3.0
-      pako: 1.0.11
-      readable-stream: 2.3.7
-      setimmediate: 1.0.5
-    dev: false
-
   /kind-of/6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
@@ -2596,18 +2555,6 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /lie/3.1.1:
-    resolution: {integrity: sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==}
-    dependencies:
-      immediate: 3.0.6
-    dev: false
-
-  /lie/3.3.0:
-    resolution: {integrity: sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==}
-    dependencies:
-      immediate: 3.0.6
-    dev: false
-
   /lilconfig/2.0.6:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
     engines: {node: '>=10'}
@@ -2625,12 +2572,6 @@ packages:
       parse-json: 4.0.0
       pify: 3.0.0
       strip-bom: 3.0.0
-    dev: false
-
-  /localforage/1.10.0:
-    resolution: {integrity: sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==}
-    dependencies:
-      lie: 3.1.1
     dev: false
 
   /locate-path/2.0.0:
@@ -3087,10 +3028,6 @@ packages:
   /p-try/2.2.0:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
-    dev: false
-
-  /pako/1.0.11:
-    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
     dev: false
 
   /parent-module/1.0.1:
@@ -3574,10 +3511,6 @@ packages:
     resolution: {integrity: sha512-1jeBGaKNGdEq4FgIrORu/N570dwoPYio8lSoYLWmX7sQ//0JY08Xh9o5pBcgmHQ/MbsYp/aZnOe1s1lIsbLprQ==}
     dev: true
 
-  /setimmediate/1.0.5:
-    resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
-    dev: false
-
   /sharp/0.30.7:
     resolution: {integrity: sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==}
     engines: {node: '>=12.13.0'}
@@ -3728,10 +3661,6 @@ packages:
   /split2/4.1.0:
     resolution: {integrity: sha512-VBiJxFkxiXRlUIeyMQi8s4hgvKCSjtknJv/LVYbrgALPwf5zSKmEwV9Lst25AkvMDnvxODugjdl6KZgwKM1WYQ==}
     engines: {node: '>= 10.x'}
-    dev: false
-
-  /sql.js/1.8.0:
-    resolution: {integrity: sha512-3HD8pSkZL+5YvYUI8nlvNILs61ALqq34xgmF+BHpqxe68yZIJ1H+sIVIODvni25+CcxHUxDyrTJUL0lE/m7afw==}
     dev: false
 
   /stream-buffers/2.2.0:
