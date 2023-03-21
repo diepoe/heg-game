@@ -8,7 +8,7 @@
 <div class="p-10 bg-white rounded-xl space-y-2 h-screen w-full">
 	<TextWrapper>
 		<header>
-			<h1>🎉🎉🎉<br />Gratulation<br />🎉🎉🎉</h1>
+			<h1>🎉🎉🎉🎉🎉<br />Gratulation<br />🎉🎉🎉🎉🎉</h1>
 		</header>
 		<p>Sie haben das Spiel gewonnen!</p>
 		<p>Nun ist Herzog Ernst glücklich!</p>
