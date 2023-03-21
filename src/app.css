@@ -5,6 +5,7 @@
 @layer base {
 	body {
 		margin-top: env(safe-area-inset-top);
+		margin-bottom: env(safe-area-inset-bottom);
 
 		@apply max-w-full touch-none select-none overflow-hidden min-h-screen;
 	}
