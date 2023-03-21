@@ -18,6 +18,14 @@ pnpm run dev -- --open
 
 To create a production version of the app:
 
+### android
+```bash
+chmod +x ./run-android
+
+./run-android
+```
+
+### ios
 ```bash
 chmod +x ./run-ios
 
