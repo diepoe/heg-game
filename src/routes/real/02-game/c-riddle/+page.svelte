@@ -25,11 +25,30 @@
 		visited: 'null'
 	};
 
+	let guessOne: Room = {
+		id: 'nothing',
+		name: 'null',
+		description: 'null',
+		hintsToFind: [],
+		etage: 'null',
+		visited: 'null'
+	};
 
-	let guesses: Room[];
+	let guessTwo: Room = {
+		id: 'nothing',
+		name: 'null',
+		description: 'null',
+		hintsToFind: [],
+		etage: 'null',
+		visited: 'null'
+	};
 
+	let randomOrder: number = Math.floor(Math.random() * 3);
 
 	onMount(() => {
+		// ensure order is newly randomized every turn
+		randomOrder = Math.floor(Math.random() * 3);
+
 		const roomSearch = $rooms.find((t) => t.id === $currentRoomID);
 
 		if (roomSearch != undefined) {
@@ -50,10 +69,30 @@
 				if (filteredUnvisitedRooms.length > 0) {
 					nextRoom =
 						filteredUnvisitedRooms[Math.floor(Math.random() * (filteredUnvisitedRooms.length - 1))];
+
+					guessOne = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					while (guessOne == nextRoom) {
+						guessOne = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					}
+
+					guessTwo = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					while (guessTwo == nextRoom || guessTwo == guessOne) {
+						guessTwo = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					}
 				}
 				// fallback if all rooms on the current level are visited
 				else {
 					nextRoom = unvisitedRooms[Math.floor(Math.random() * (unvisitedRooms.length - 1))];
+
+					guessOne = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					while (guessOne == nextRoom) {
+						guessOne = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					}
+
+					guessTwo = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					while (guessTwo == nextRoom || guessTwo == guessOne) {
+						guessTwo = $rooms[Math.floor(Math.random() * ($rooms.length - 1))];
+					}
 				}
 				// set the next room
 				nextRoomID.set(nextRoom.id);
@@ -97,18 +136,48 @@
 			<p>Welcher der folgenden Räume könnte dafür infrage kommen?</p>
 		</TextWrapper>
 		<ul class="p-2 mx-2">
-			<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
-				<input type="checkbox" class="form-checkbox rounded text-green-600" />
-				{nextRoom.name}
-			</li>
-			<li on:keydown on:click={() => showToast('Biologie Trakt', false)}>
-				<input type="checkbox" class="form-checkbox rounded text-red-600" />
-				Biologie Trakt
-			</li>
-			<li on:keydown on:click={() => showToast('Informatikraum', false)}>
-				<input type="checkbox" class="form-checkbox rounded text-red-600" />
-				Informatikraum
-			</li>
+			{#if randomOrder == 0}
+				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					{nextRoom.name}
+				</li>
+				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessOne.name}
+				</li>
+				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessTwo.name}
+				</li>
+			{/if}
+			{#if randomOrder == 1}
+				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessOne.name}
+				</li>
+				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					{nextRoom.name}
+				</li>
+				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessTwo.name}
+				</li>
+			{/if}
+			{#if randomOrder == 2}
+				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessTwo.name}
+				</li>
+				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					{guessOne.name}
+				</li>
+				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					{nextRoom.name}
+				</li>
+			{/if}
 		</ul>
 		<section class="absolute bottom-0">
 			<TextWrapper>
