@@ -125,7 +125,7 @@
 <div class="p-10 bg-white rounded-xl space-y-2 h-screen w-full">
 	{#if !rightAnswerChecked}
 		<TextWrapper>
-			<h2>Der nächste Raum sie zu finden<small><sup>*</sup></small></h2>
+			<h2>Der nächste Raum</h2>
 			<p>hat folgende Eigenschaften:</p>
 			<ul>
 				{#each nextRoom.hintsToFind as hint}
@@ -179,11 +179,6 @@
 				</li>
 			{/if}
 		</ul>
-		<section class="absolute bottom-0">
-			<TextWrapper>
-				<small><sup>*</sup>Herr der Ringe ist auch noch 2023 beliebt</small>
-			</TextWrapper>
-		</section>
 	{:else}
 		<TextWrapper>
 			<h2>So gelangst du zum nächsten Raum</h2>

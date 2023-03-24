@@ -6,8 +6,12 @@
 	/**
 	 * requests camera permission for qr-code scanning from the user
 	 */
-	function requestCameraPermission() {
-		BarcodeScanner.prepare();
+	async function requestCameraPermission() {
+		const status = await BarcodeScanner.checkPermission({ force: true });
+
+		if (status.granted) {
+			BarcodeScanner.prepare();
+		}
 	}
 </script>
 
