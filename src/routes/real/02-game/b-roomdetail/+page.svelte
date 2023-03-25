@@ -12,7 +12,7 @@
 		name: 'null',
 		description: 'null',
 		hintsToFind: [],
-		etage: 'null',
+		etage: '0',
 		visited: 'null'
 	};
 
@@ -24,7 +24,6 @@
 	};
 
 	onMount(() => {
-
 		const roomSearch = $rooms.find((t) => t.id === $roomID);
 
 		if (roomSearch != undefined) {
@@ -37,9 +36,19 @@
 </script>
 
 <Body style="margin-top: 0px !important;" />
-<img src={'/rooms/' + currentRoom.id + '.jpg'} alt="Bild Atrium" />
+<div
+	class="blur hidden md:block bg-center z-0 bg-no-repeat bg-cover h-[40vh] lg:h-[50vh]"
+	style={'background-image: url(/rooms/' + currentRoom.id + '.jpg);'}
+/>
+<img
+	src={'/rooms/' + currentRoom.id + '.jpg'}
+	class="md:absolute md:top-[20%] md:left-1/2 md:z-40 md:h-[40vh] lg:h-[50vh] md:w-auto md:-translate-y-1/2 md:-translate-x-1/2"
+	alt={'Bild ' + currentRoom.name}
+/>
 
-<div class="p-10 relative -top-8 bg-white rounded-xl space-y-2 w-full">
+<div
+	class="p-10 relative -top-8 bg-white rounded-t-xl z-50 md:rounded-t-2xl lg:rounded-t-3xl space-y-2 w-full"
+>
 	<heading class="prose">
 		<h2>{currentRoom.name}</h2>
 	</heading>
@@ -61,7 +70,7 @@
 
 <a
 	href="/real/02-game/c-riddle"
-	class="bg-primary-600 rounded-lg grid place-items-center mx-9 absolute bottom-8 w-[80%] p-2 text-white text-sm shadow-lg shadow-primary-500"
+	class="bg-primary-600 rounded-lg grid m-auto place-items-center mx-9 absolute bottom-8 w-[80%] md:w-1/2 lg:w-1/3 p-2 text-white text-sm shadow-lg shadow-primary-500"
 >
 	Zum nächsten Raum
 </a>
