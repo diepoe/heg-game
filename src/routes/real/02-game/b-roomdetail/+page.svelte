@@ -44,7 +44,15 @@
 		<h2>{currentRoom.name}</h2>
 	</heading>
 	<section class="bg-primary-600 rounded-lg  max-w-fit p-2 text-white text-sm">
-		Hauptgebäude
+		{#if currentRoom.etage == '-1'}
+			Keller
+		{:else if currentRoom.etage == '0'}
+			Erdgeschoss
+		{:else if currentRoom.etage == '1'}
+			1. Obergeschoss
+		{:else if currentRoom.etage == '2'}
+			2. Obergeschoss
+		{/if}
 	</section>
 	<TextWrapper className="pt-10">
 		{@html currentRoom.description}
