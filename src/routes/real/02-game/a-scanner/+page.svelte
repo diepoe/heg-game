@@ -82,7 +82,7 @@
 
 <section class="m-auto bg-none bg-transparent w-full h-64 border-y-6 border-primary-600" />
 
-<section class="grid min-h-screen place-items-center">
+<section class="absolute bottom-6 w-full grid place-items-center">
 	{#if !scanning}
 		<button
 			on:click={() => startScan()}
