@@ -63,14 +63,14 @@
 			2. Obergeschoss
 		{/if}
 	</section>
-	<TextWrapper className="pt-10">
+	<TextWrapper className="mt-10 max-h-[42vh] overflow-y-scroll">
 		{@html currentRoom.description}
 	</TextWrapper>
 </div>
 
 <a
 	href="/real/02-game/c-riddle"
-	class="bg-primary-600 rounded-lg grid m-auto place-items-center mx-9 absolute bottom-8 w-[80%] md:w-1/2 lg:w-1/3 p-2 text-white text-sm shadow-lg shadow-primary-500"
+	class="bg-primary-600 rounded-lg grid place-items-center absolute bottom-8 left-[10%] w-4/5 p-2 text-white text-sm shadow-lg shadow-primary-500"
 >
 	Zum nächsten Raum
 </a>

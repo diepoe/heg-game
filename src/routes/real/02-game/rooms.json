@@ -17,6 +17,7 @@
         "description": "Die Schülerfirma",
         "hintsToFind": [
             "Schülerzeitung",
+            "HEG-Shop",
             "Keller"
         ],
         "etage": "-1",
@@ -27,7 +28,7 @@
         "name": "Abimonumente",
         "description": "Der Korridor mit den Abimonumnten",
         "hintsToFind": [
-            "Abi Mottos",
+            "Abimottos",
             "Oberstufenraum"
         ],
         "etage": "-1",
@@ -38,10 +39,10 @@
         "name": "Pausenhalle Süd",
         "description": "Die südliche Pausenhalle",
         "hintsToFind": [
-            "Jungs toilette",
-            "Kunstvitrine",
+            "Jungstoilette",
+            "Kunstvitrinen",
             "Hausaufgabenhilfe",
-            "Atrium Eingang"
+            "Atriumzugang"
         ],
         "etage": "0",
         "visited": "false"
@@ -53,8 +54,8 @@
         "hintsToFind": [
             "Vertretungsplan",
             "Mensaautomat",
-            "Atrium Eingang",
-            "Zugang zum Lehrerzimmer"
+            "Atriumeingang",
+            "Eingang zum Lehrerzimmer"
         ],
         "etage": "0",
         "visited": "false"
@@ -66,7 +67,8 @@
         "hintsToFind": [
             "Ausblick zum Atrium",
             "Aquarium",
-            "Mikroskope"
+            "Mikroskope",
+            "Fotosynthese"
         ],
         "etage": "0",
         "visited": "false"
@@ -89,8 +91,9 @@
         "name": "Sekretariat",
         "description": "Das Sekretariat",
         "hintsToFind": [
-            "Schulleiterbüro",
-            "Krankmeldungen"
+            "Schulleitungsbüros",
+            "Krankmeldungen",
+            "Kühlkissen"
         ],
         "etage": "0",
         "visited": "false"
@@ -98,10 +101,10 @@
     {
         "id": "bibliothek",
         "name": "Bibliothek",
-        "description": "die eigene Bibliothek der Schule",
+        "description": "Die eigene Bibliothek der Schule. In den Räumen der Schulbibliothek finden sich Arbeitsplätze sowie gemütliche Leseecken. Sitzsäcke und Sofas laden zum entspannten Schmökern ein.",
         "hintsToFind": [
             "Bücher",
-            "Pause",
+            "Pausenbereich",
             "Filmleihe"
         ],
         "etage": "0",
@@ -114,7 +117,8 @@
         "hintsToFind": [
             "Fachraum",
             "Computer",
-            "Arne Bösser"
+            "Arne Bösser",
+            "Geburtsort dieses Spiels"
         ],
         "etage": "1",
         "visited": "false"
@@ -126,7 +130,9 @@
         "hintsToFind": [
             "Fachraum",
             "Versuche",
-            "Newton"
+            "Newton",
+            "Mechanik",
+            "Elektrizität"
         ],
         "etage": "1",
         "visited": "false"
@@ -150,7 +156,8 @@
         "hintsToFind": [
             "Fachraum",
             "Welkarten",
-            "Globus"
+            "Globus",
+            "Geographie"
         ],
         "etage": "1",
         "visited": "false"
@@ -170,7 +177,7 @@
     {
         "id": "musik",
         "name": "Musikraum",
-        "description": "Der Musik Klassenraum",
+        "description": "<p>Aushängeschilder der Fachschaft Musik sind die <b>Bläserklassen</b> (Jg. 5-6), die <b>Musikklassen</b> (Jg. 7-10) und nicht zuletzt die vielfältigen AGen, in denen musikalische Inhalte durch praktische Tätigkeit gefestigt, vertieft und schließlich in Konzerten präsentiert werden können. So zeigen z.B. die Bläser- und Musikklassen jedes Jahr in einem Konzert kurz vor den Osterferien, was sie im Instrumental- und Musikunterricht gelernt haben.</p> <p>Das derzeitige AG-Angebot umfasst:</p> <ul> <li>Big Band</li> <li>Chor 5-7</li> <li>Chor 8-12</li> <li>Flöten-Ensemble</li> <li>HEG-Tunes</li> <li>Orchester</li> </ul> <p>Dazu gehören auch gemeinsame Fahrten, Projekte und Probentage. So findet im November ein ganztägiger Probentag am Buß- und Bettag statt, um die Weihnachtskonzerte vorzubereiten. Am Schuljahresende, wenn alle Klassenarbeiten und Zensuren feststehen, fahren wir zudem mit allen Musikgruppen zu 2-3 Probentagen in die Jugendherberge Hitzacker zur Vorbereitung des Sommerkonzertes. Der Chor 8-12 fährt zudem regelmäßig zur Jugendchorbegegnung Eurotreff in Wolfenbüttel und hat bereits zahlreiche Reisen ins europäische Ausland und die USA unternommen.</p>",
         "hintsToFind": [
             "Fachraum",
             "Instrumente",
