@@ -18,7 +18,7 @@
 <OnboardingWrapper>
 	<li class="grid place-items-center ">
 		<TextWrapper inverted={true}>
-			Wir benötigen ihre Zustimmung für den Kamerazugriff, um die spielwichtigen QR-Codes innerhalb
+			Wir benötigen deine Zustimmung für den Kamerazugriff, um die spielwichtigen QR-Codes innerhalb
 			der Schule zu scannen:
 		</TextWrapper>
 		<button
