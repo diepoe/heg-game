@@ -181,10 +181,20 @@
 		</ul>
 	{:else}
 		<TextWrapper>
-			<h2>So gelangst du zum nächsten Raum</h2>
-			<p>
-				Du gelangst zur <b>{nextRoom.name}</b>, indem <i>INSERT DESCRIPTION HERE</i>
-			</p>
+			<h2>Ab zum nächsten Raum!</h2>
+			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
+		</TextWrapper>
+		<ul class="list-disc font-bold list-inside px-4">
+			<li class="text-amber-500">Aktueller Raum</li>
+			<li class="text-teal-500">Nächster Raum</li>
+		</ul>
+
+		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
+			<div class="bg-amber-500 shadow shadow-amber-500 w-3 absolute top-1/2 left-1/3 h-3 rounded-full" />
+			<div class="bg-teal-500 shadow shadow-teal-500 w-3 absolute top-2/3 left-[20%] h-3 rounded-full" />
+		</div>
+
+		<TextWrapper>
 			<p>
 				Du hast den QR-Code des Raumes gefunden? Scanne ihn durch anwählen des folgenden Buttons!
 			</p>
@@ -193,27 +203,9 @@
 			<a
 				href="/real/02-game/a-scanner"
 				aria-label="Zum QR-Scan"
-				class="grid place-items-center p-4 rounded-full bg-primary-600 shadow-lg shadow-primary-600/70 m-auto"
+				class="grid place-items-center text-white p-2 rounded-full bg-primary-600 shadow-lg shadow-primary-600/70 m-auto"
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="w-8 h-8 text-white"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
-					/>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
-					/>
-				</svg>
+				Zum QR-Scan
 			</a>
 		</section>
 	{/if}

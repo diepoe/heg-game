@@ -5,6 +5,9 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
+			backgroundImage: {
+				'map': "url('/map/map.jpeg')"
+			},
 			blur: {
 				xs: '2px',
 			},
