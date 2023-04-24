@@ -9,7 +9,7 @@ module.exports = {
 				xs: '2px',
 			},
 			colors: {
-				primary: colors.emerald
+				primary: colors.stone
 			}
 		}
 	},
