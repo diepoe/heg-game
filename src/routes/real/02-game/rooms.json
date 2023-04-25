@@ -101,7 +101,7 @@
     {
         "id": "bibliothek",
         "name": "Bibliothek",
-        "description": "Die eigene Bibliothek der Schule. In den Räumen der Schulbibliothek finden sich Arbeitsplätze sowie gemütliche Leseecken. Sitzsäcke und Sofas laden zum entspannten Schmökern ein.",
+        "description": "<p>Die eigene Bibliothek der Schule. In den Räumen der Schulbibliothek finden sich Arbeitsplätze sowie gemütliche Leseecken. Sitzsäcke und Sofas laden zum entspannten Schmökern ein.</p>",
         "hintsToFind": [
             "Bücher",
             "Pausenbereich",
