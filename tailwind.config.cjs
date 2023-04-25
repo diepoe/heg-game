@@ -16,8 +16,16 @@ module.exports = {
 				primary: colors.stone
 			},
 			fontFamily: {
-				grenze: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif]
+				grenze: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif],
+				gotisch: ["Grenze Gotisch", "'GrenzeGotisch'", ...defaultTheme.fontFamily.serif]
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						fontFamily: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif]
+					}
+				}
+			}
 		}
 	},
 	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]

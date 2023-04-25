@@ -5,9 +5,25 @@
 @layer base {
 	@font-face {
 		font-family: "Grenze";
-		src: url("/fonts/Grenze/woff/Grenze-Regular.woff2") format('woff2'),
+		src: url("/fonts/Grenze/woff2/Grenze-Regular.woff2") format('woff2'),
 			url('/fonts/Grenze/woff/Grenze-Regular.woff') format('woff');
 		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "GrenzeGotisch";
+		src: url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Regular.woff2') format('woff2'),
+			url('/fonts/Grenze-Gotisch/woff/GrenzeGotisch-Regular.woff') format('woff');
+		font-display: swap;
+		font-weight: 400;
+	}
+
+	@font-face {
+		font-family: "GrenzeGotisch";
+		src: url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Bold.woff2') format('woff2'),
+			url('/fonts/Grenze-Gotisch/woff/GrenzeGotisch-Bold.woff') format('woff');
+		font-display: swap;
+		font-weight: 700;
 	}
 
 	body {
