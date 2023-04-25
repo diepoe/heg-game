@@ -9,7 +9,7 @@
 </script>
 
 <OnboardingWrapper delay={true}>
-	<li class="grid place-items-center prose prose-lg font-gotisch font-normal prose-invert">
+	<li class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium">
 		<h1>Start Game</h1>
 	</li>
 	<li class="grid place-items-center">

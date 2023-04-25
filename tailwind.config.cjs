@@ -22,7 +22,8 @@ module.exports = {
 			typography: {
 				DEFAULT: {
 					css: {
-						fontFamily: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif]
+						fontFamily: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif],
+						fontWeight: 300
 					}
 				}
 			}

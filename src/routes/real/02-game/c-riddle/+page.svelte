@@ -110,7 +110,7 @@
 	function showToast(roomname: string, correct: boolean) {
 		let antwort: string = '';
 		if (correct == true) {
-			rightAnswerChecked = true;
+			setTimeout(() => (rightAnswerChecked = true), 2000);
 			antwort = 'richtig';
 		} else {
 			antwort = 'falsch';
@@ -135,46 +135,46 @@
 
 			<p>Welcher der folgenden Räume könnte dafür infrage kommen?</p>
 		</TextWrapper>
-		<ul class="p-2 mx-2">
+		<ul class="p-2 mx-2 font-grenze text-lg">
 			{#if randomOrder == 0}
 				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
-					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					{nextRoom.name}
 				</li>
 				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessOne.name}
 				</li>
 				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessTwo.name}
 				</li>
 			{/if}
 			{#if randomOrder == 1}
 				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessOne.name}
 				</li>
 				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
-					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					{nextRoom.name}
 				</li>
 				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessTwo.name}
 				</li>
 			{/if}
 			{#if randomOrder == 2}
 				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessTwo.name}
 				</li>
 				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
-					<input type="checkbox" class="form-checkbox rounded text-red-600" />
+					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					{guessOne.name}
 				</li>
 				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
-					<input type="checkbox" class="form-checkbox rounded text-green-600" />
+					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					{nextRoom.name}
 				</li>
 			{/if}
@@ -184,14 +184,18 @@
 			<h2>Ab zum nächsten Raum!</h2>
 			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
 		</TextWrapper>
-		<ul class="list-disc font-bold list-inside text-lg font-grenze px-4">
+		<ul class="list-disc list-inside text-lg font-grenze px-4">
 			<li class="text-amber-500">Aktueller Raum</li>
 			<li class="text-teal-500">Nächster Raum</li>
 		</ul>
 
 		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
-			<div class="bg-amber-500 shadow shadow-amber-500 w-3 absolute top-1/2 left-1/3 h-3 rounded-full" />
-			<div class="bg-teal-500 shadow shadow-teal-500 w-3 absolute top-2/3 left-[20%] h-3 rounded-full" />
+			<div
+				class="bg-amber-500 shadow shadow-amber-500 w-3 absolute top-1/2 left-1/3 h-3 rounded-full"
+			/>
+			<div
+				class="bg-teal-500 shadow shadow-teal-500 w-3 absolute top-2/3 left-[20%] h-3 rounded-full"
+			/>
 		</div>
 
 		<TextWrapper>

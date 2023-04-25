@@ -50,7 +50,7 @@
 	class="p-10 relative -top-8 bg-white rounded-t-xl z-50 md:rounded-t-2xl lg:rounded-t-3xl space-y-2 w-full"
 >
 	<heading class="prose prose-headings:font-gotisch prose-headings:font-normal">
-		<h2>{currentRoom.name}</h2>
+		<h1>{currentRoom.name}</h1>
 	</heading>
 	<section class="bg-primary-600 font-grenze rounded-lg  max-w-fit p-2 text-white text-sm">
 		{#if currentRoom.etage == '-1'}
