@@ -70,7 +70,7 @@
 
 <a
 	href="/real/02-game/c-riddle"
-	class="bg-primary-600 rounded-lg grid place-items-center absolute bottom-8 left-[10%] w-4/5 p-2 text-white text-sm shadow-lg shadow-primary-500"
+	class="bg-primary-600 rounded-lg text-lg font-grenze grid place-items-center absolute bottom-8 left-[10%] w-4/5 p-2 text-white shadow-lg shadow-primary-500"
 >
 	Zum nächsten Raum
 </a>

@@ -86,14 +86,14 @@
 	{#if !scanning}
 		<button
 			on:click={() => startScan()}
-			class="w-1/3 p-2 rounded-full bg-primary-600 shadow-lg shadow-primary-600/70 text-white"
+			class="w-1/3 p-2 rounded-full text-lg font-grenze bg-primary-600 shadow-lg shadow-primary-600/70 text-white"
 		>
 			Start Scan
 		</button>
 	{:else}
 		<button
 			on:click={() => stopScan()}
-			class="w-1/3 p-2 rounded-full bg-red-600 shadow-lg shadow-red-600/70 text-white"
+			class="w-1/3 p-2 text-lg font-grenze rounded-full bg-red-600 shadow-lg shadow-red-600/70 text-white"
 		>
 			Stop Scan
 		</button>

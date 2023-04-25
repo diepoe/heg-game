@@ -22,7 +22,7 @@
 			der Schule zu scannen:
 		</TextWrapper>
 		<button
-			class="p-2 rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
+			class="p-2 my-2 font-grenze text-lg rounded border border-white border-dashed text-white max-w-fit h-auto bg-primary-600"
 			on:click={() => requestCameraPermission()}
 		>
 			Kamerazugriff erlauben

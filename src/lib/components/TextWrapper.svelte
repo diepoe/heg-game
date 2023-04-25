@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="prose-primary prose xl:prose-lg p-4 {className}"
+	class="prose-primary font-grenze prose-lg xl:prose-xl p-4 {className}"
 	class:invisible
 	class:transparent
 	class:prose-invert={inverted}

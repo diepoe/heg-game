@@ -184,7 +184,7 @@
 			<h2>Ab zum nächsten Raum!</h2>
 			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
 		</TextWrapper>
-		<ul class="list-disc font-bold list-inside px-4">
+		<ul class="list-disc font-bold list-inside text-lg font-grenze px-4">
 			<li class="text-amber-500">Aktueller Raum</li>
 			<li class="text-teal-500">Nächster Raum</li>
 		</ul>
@@ -203,7 +203,7 @@
 			<a
 				href="/real/02-game/a-scanner"
 				aria-label="Zum QR-Scan"
-				class="grid place-items-center text-white p-2 rounded-full bg-primary-600 shadow-lg shadow-primary-600/70 m-auto"
+				class="grid text-lg font-grenze place-items-center text-white p-2 rounded-full bg-primary-600 shadow-lg shadow-primary-600/70 m-auto"
 			>
 				Zum QR-Scan
 			</a>

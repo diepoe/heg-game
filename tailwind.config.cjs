@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,7 +14,10 @@ module.exports = {
 			},
 			colors: {
 				primary: colors.stone
-			}
+			},
+			fontFamily: {
+				grenze: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif]
+			},
 		}
 	},
 	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]

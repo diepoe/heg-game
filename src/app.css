@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+	@font-face {
+		font-family: "Grenze";
+		src: url("/fonts/Grenze/woff/Grenze-Regular.woff2") format('woff2'),
+			url('/fonts/Grenze/woff/Grenze-Regular.woff') format('woff');
+		font-display: swap;
+	}
+
 	body {
 		margin-top: env(safe-area-inset-top);
 		margin-bottom: env(safe-area-inset-bottom);

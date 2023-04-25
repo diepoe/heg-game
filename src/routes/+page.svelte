@@ -18,7 +18,7 @@
 	<a
 		href="/real/01-start/permissions"
 		on:click={() => showToast('Im Gebäude')}
-		class="p-2 rounded grid place-items-center bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
+		class="p-2 text-lg font-grenze rounded grid place-items-center bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
 	>
 		Im Gebäude
 	</a>
