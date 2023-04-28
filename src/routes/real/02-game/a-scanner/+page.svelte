@@ -80,7 +80,7 @@
 	<h3>Scanne den QR-Code mit Anwählen des farbigen Buttons!</h3>
 </TextWrapper>
 
-<section class="m-auto bg-none bg-transparent w-full h-64 border-y-6 border-primary-600" />
+<div class = "absolute top-1/4 left-1/4 border-8 rounded-xl border-primary-500 w-[50vw] h-[50vw]"> </div>
 
 <section class="absolute bottom-6 w-full grid place-items-center">
 	{#if !scanning}
