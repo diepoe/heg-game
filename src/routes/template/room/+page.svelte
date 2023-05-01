@@ -1,31 +1,48 @@
 <script lang="ts">
 	import { Body } from 'svelte-body';
+	import TextWrapper from '$lib/components/TextWrapper.svelte';
+
+	import type { Room } from '$lib/types/room.type';
+
+	let currentRoom: Room = {
+		id: 'atrium',
+		name: 'Atrium',
+		description: '<ul><li>Lorem ipsum</li></ul>',
+		hintsToFind: [],
+		etage: '0',
+		visited: 'null'
+	};
 </script>
 
 <Body style="margin-top: 0px !important;" />
+<div
+	class="blur hidden md:block bg-center z-0 bg-no-repeat bg-cover h-[40vh] lg:h-[50vh]"
+	style={'background-image: url(/rooms/' + currentRoom.id + '.jpg);'}
+/>
 <img
-	src="https://www.heg-uelzen.de/wp-content/uploads/2022/07/1-08.JPG"
-	alt="Bild Atrium"
-	class="-mt-[env(safe-area-inset-top)]"
+	src={'/rooms/' + currentRoom.id + '.jpg'}
+	class="md:absolute md:top-[20%] md:left-1/2 md:z-40 md:h-[40vh] lg:h-[50vh] md:w-auto md:-translate-y-1/2 md:-translate-x-1/2"
+	alt={'Bild ' + currentRoom.name}
 />
 
-<div class="p-10 relative -top-8 bg-white rounded-xl space-y-2 w-full">
-	<heading class="prose">
-		<h2>Atrium</h2>
-	</heading>
-	<section class="bg-primary-600 rounded-lg  max-w-fit p-2 text-white text-sm">
-		Hauptgebäude
-	</section>
-	<p class="text-sm pt-10">
-		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, saepe! Inventore
-		consequuntur aperiam assumenda mollitia dolor ab suscipit numquam, eum, at quas et, odit culpa
-		laboriosam voluptatibus corporis tempore ut.
-	</p>
-</div>
-
-<a
-	href="/template/schnitzeljagd"
-	class="bg-primary-600 rounded-lg grid place-items-center mx-9 absolute bottom-8 w-[80%] p-2 text-white text-sm shadow-lg shadow-primary-500"
+<div
+	class="p-10 relative -top-8 bg-white rounded-t-xl z-50 md:rounded-t-2xl lg:rounded-t-3xl space-y-2 w-full"
 >
-	Zum nächsten Raum
-</a>
+	<heading class="prose prose-headings:font-gotisch prose-headings:font-normal">
+		<h1>{currentRoom.name}</h1>
+	</heading>
+	<section class="bg-primary-600 font-grenze rounded-lg  max-w-fit p-2 text-white text-sm">
+		{#if currentRoom.etage == '-1'}
+			Keller
+		{:else if currentRoom.etage == '0'}
+			Erdgeschoss
+		{:else if currentRoom.etage == '1'}
+			1. Obergeschoss
+		{:else if currentRoom.etage == '2'}
+			2. Obergeschoss
+		{/if}
+	</section>
+	<TextWrapper className="mt-10 max-h-[32vh] overflow-y-scroll bg-transparent">
+		{@html currentRoom.description}
+	</TextWrapper>
+</div>
