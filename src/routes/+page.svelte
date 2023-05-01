@@ -10,7 +10,7 @@
 </script>
 
 <TextWrapper>
-	<h2>Herzlich Willkommen...</h2>
+	<h1>Herzlich Willkommen...</h1>
 	<p>hier im Herzog-Ernst-Gymnasium. Bevor du startest, wähle bitte deinen Spielmodus aus:</p>
 </TextWrapper>
 

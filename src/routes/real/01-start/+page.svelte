@@ -9,9 +9,9 @@
 </script>
 
 <OnboardingWrapper delay={true}>
-	<li class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium">
+	<div class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium">
 		<h1>Start Game</h1>
-	</li>
+	</div>
 	<li class="grid place-items-center">
 		<a href="/real/02-game/a-scanner" class="p-4 rounded-full border border-white hover:bg-white group">
 			<svg

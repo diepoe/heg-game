@@ -17,13 +17,13 @@ module.exports = {
 			},
 			fontFamily: {
 				grenze: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif],
-				gotisch: ["Grenze Gotisch", "'GrenzeGotisch'", ...defaultTheme.fontFamily.serif]
+				gotisch: ["Grenze Gotisch", "'Grenze Gotisch'", ...defaultTheme.fontFamily.serif]
 			},
 			typography: {
 				DEFAULT: {
 					css: {
 						fontFamily: ["Grenze", "'Grenze'", ...defaultTheme.fontFamily.serif],
-						fontWeight: 300
+						fontWeight: 400
 					}
 				}
 			}
