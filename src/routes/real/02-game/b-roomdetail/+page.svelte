@@ -63,7 +63,7 @@
 			2. Obergeschoss
 		{/if}
 	</section>
-	<TextWrapper className="mt-10 max-h-[30vh] overflow-y-scroll">
+	<TextWrapper className="mt-10 max-h-[32vh] overflow-y-scroll bg-transparent">
 		{@html currentRoom.description}
 	</TextWrapper>
 </div>
