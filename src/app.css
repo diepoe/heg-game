@@ -20,8 +20,24 @@
 	}
 
 	@font-face {
+		font-family: "Grenze";
+		src: url("/fonts/Grenze/woff2/Grenze-Medium.woff2") format('woff2'),
+			url('/fonts/Grenze/woff/Grenze-Medium.woff') format('woff');
+		font-display: swap;
+		font-weight: 500;
+	}
+
+	@font-face {
+		font-family: "Grenze";
+		src: url("/fonts/Grenze/woff2/Grenze-Bold.woff2") format('woff2'),
+			url('/fonts/Grenze/woff/Grenze-Bold.woff') format('woff');
+		font-display: swap;
+		font-weight: 700;
+	}
+
+	@font-face {
 		font-family: "Grenze Gotisch";
-		src: url('/fonts/Grenze-Gotisch/ttf/GrenzeGotisch-Regular.ttf') format('truetype'), url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Regular.woff2') format('woff2'),
+		src: url('/fonts/Grenze-Gotisch/eot/GrenzeGotisch-Regular.eot'), url('/fonts/Grenze-Gotisch/ttf/GrenzeGotisch-Regular.ttf') format('truetype'), url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Regular.woff2') format('woff2'),
 			url('/fonts/Grenze-Gotisch/woff/GrenzeGotisch-Regular.woff') format('woff');
 		font-display: swap;
 		font-weight: 400;
@@ -29,7 +45,7 @@
 
 	@font-face {
 		font-family: "Grenze Gotisch";
-		src: url('/fonts/Grenze-Gotisch/ttf/GrenzeGotisch-Medium.ttf') format('truetype'), url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Medium.woff2') format('woff2'),
+		src: url('/fonts/Grenze-Gotisch/eot/GrenzeGotisch-Medium.eot'), url('/fonts/Grenze-Gotisch/ttf/GrenzeGotisch-Medium.ttf') format('truetype'), url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Medium.woff2') format('woff2'),
 			url('/fonts/Grenze-Gotisch/woff/GrenzeGotisch-Medium.woff') format('woff');
 		font-display: swap;
 		font-weight: 500;
@@ -37,7 +53,7 @@
 
 	@font-face {
 		font-family: "Grenze Gotisch";
-		src: url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Bold.woff2') format('woff2'),
+		src: url('/fonts/Grenze-Gotisch/eot/GrenzeGotisch-Bold.eot'), url('/fonts/Grenze-Gotisch/ttf/GrenzeGotisch-Bold.ttf') format('truetype'), url('/fonts/Grenze-Gotisch/woff2/GrenzeGotisch-Bold.woff2') format('woff2'),
 			url('/fonts/Grenze-Gotisch/woff/GrenzeGotisch-Bold.woff') format('woff');
 		font-display: swap;
 		font-weight: 700;
