@@ -10,7 +10,7 @@
 
 <OnboardingWrapper delay={true}>
 	<div class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium">
-		<h1>Start Game</h1>
+		<h1>Starte das Abenteuer!</h1>
 	</div>
 	<li class="grid place-items-center">
 		<a href="/real/02-game/a-scanner" class="p-4 rounded-full border border-white hover:bg-white group">
