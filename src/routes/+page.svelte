@@ -16,7 +16,7 @@
 
 <section class="grid grid-cols-2 m-auto max-w-md gap-3 px-4">
 	<a
-		href="/real/01-start/permissions"
+		href="/real/01-start/story"
 		on:click={() => showToast('Im Gebäude')}
 		class="p-2 text-lg font-grenze rounded grid place-items-center bg-primary-600 text-white hover:bg-white hover:text-primary-600 border border-primary-600"
 	>

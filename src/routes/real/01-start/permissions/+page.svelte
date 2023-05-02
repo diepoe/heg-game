@@ -15,7 +15,7 @@
 	}
 </script>
 
-<OnboardingWrapper>
+<OnboardingWrapper delay={true}>
 	<li class="grid place-items-center">
 		<TextWrapper inverted={true}>
 			Wir benötigen deine Zustimmung für den Kamerazugriff, um die spielwichtigen QR-Codes innerhalb
