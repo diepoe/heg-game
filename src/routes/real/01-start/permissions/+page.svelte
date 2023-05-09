@@ -29,14 +29,17 @@
 		</button>
 	</li>
 	<li class="grid place-items-center">
-		<a href="/real/01-start" class="p-4 rounded-full border border-white hover:bg-white group">
+		<a
+			href="/real/01-start"
+			class="p-4  transform rotate-45 border border-white hover:bg-white group"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke-width="1.5"
 				stroke="currentColor"
-				class="w-6 h-6 stroke-white group-hover:stroke-primary-500"
+				class="w-6 h-6 transform -rotate-45 stroke-white group-hover:stroke-primary-500"
 				><path
 					stroke-linecap="round"
 					stroke-linejoin="round"
