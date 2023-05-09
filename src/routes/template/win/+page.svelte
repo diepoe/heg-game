@@ -14,4 +14,3 @@
 		<p><a href="/"><b>Zum Hauptmenü</b></a></p>
 	</TextWrapper>
 </div>
-
