@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="p-10 rounded-xl space-y-2 m-6 mx-auto h-screen w-5/6 bg-center bg-repeat bg-[url('/bg/church.svg')]"
+	class="p-10 rounded-xl space-y-2 m-6 mx-auto max-h-[90vh] w-5/6 bg-center bg-repeat bg-[url('/bg/church.svg')]"
 >
 	<TextWrapper inverted={true} className="prose-h1:text-primary-50 prose-a:text-primary-50">
 		<h1>Gratulation</h1>
