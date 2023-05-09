@@ -5,7 +5,7 @@
 	import { goto } from '$app/navigation';
 
 	import type { Room } from '$lib/types/room.type';
-	import { currentRoomID, nextRoomID, rooms } from '../stores';
+	import { currentRoomID, nextRoomID, rooms } from './stores';
 
 	let currentRoom: Room = {
 		id: 'nothing',

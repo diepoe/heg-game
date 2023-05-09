@@ -5,4 +5,5 @@ export interface Room {
     hintsToFind: string[];
     etage: string;
     visited: string;
+    coordinates: string | undefined;
 }
