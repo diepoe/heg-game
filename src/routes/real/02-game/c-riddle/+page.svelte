@@ -122,7 +122,7 @@
 	}
 </script>
 
-<div class="p-10 bg-white rounded-xl space-y-2 h-screen w-full">
+<div class="p-10 bg-white rounded-xl space-y-2 h-screen overflow-y-scroll w-full">
 	{#if !rightAnswerChecked}
 		<TextWrapper>
 			<h2>Der nächste Raum</h2>
