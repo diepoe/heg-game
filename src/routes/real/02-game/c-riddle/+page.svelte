@@ -195,10 +195,12 @@
 
 		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
 			<div
-				class="bg-amber-500 shadow shadow-amber-500 w-3 absolute top-1/2 left-1/3 h-3 rounded-full"
+				class={'bg-amber-500 shadow shadow-amber-500 w-3 absolute  h-3 rounded-full' +
+					currentRoom.coordinates}
 			/>
 			<div
-				class="bg-teal-500 shadow shadow-teal-500 w-3 absolute top-2/3 left-[20%] h-3 rounded-full"
+				class={'bg-teal-500 shadow shadow-teal-500 w-3 absolute  h-3 rounded-full' +
+					nextRoom.coordinates}
 			/>
 		</div>
 
