@@ -9,7 +9,8 @@
             "kleiner Ausgang zum Schulhof"
         ],
         "etage": "-1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-[20%]"
     },
     {
         "id": "schuelerfirma",
@@ -21,7 +22,8 @@
             "Keller"
         ],
         "etage": "-1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-[80%]"
     },
     {
         "id": "abimonumente",
@@ -32,7 +34,8 @@
             "Oberstufenraum"
         ],
         "etage": "-1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-1/2"
     },
     {
         "id": "pausenhalle_sued",
@@ -45,7 +48,8 @@
             "Atriumzugang"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-[80%]"
     },
     {
         "id": "pausenhalle_nord",
@@ -58,7 +62,8 @@
             "Eingang zum Lehrerzimmer"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-[35%]"
     },
     {
         "id": "bio",
@@ -71,7 +76,8 @@
             "Fotosynthese"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/3 left-1/2"
     },
     {
         "id": "atrium",
@@ -84,7 +90,8 @@
             "Aufenthaltsbereich Oberstufe"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/2 left-1/2"
     },
     {
         "id": "sekretariat",
@@ -96,7 +103,8 @@
             "Kühlkissen"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/3 left-1/4"
     },
     {
         "id": "bibliothek",
@@ -108,7 +116,8 @@
             "Filmleihe"
         ],
         "etage": "0",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/2 left-1/4"
     },
     {
         "id": "informatik",
@@ -121,7 +130,8 @@
             "Geburtsort dieses Spiels"
         ],
         "etage": "1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/2 left-1/3"
     },
     {
         "id": "physik",
@@ -135,7 +145,8 @@
             "Elektrizität"
         ],
         "etage": "1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-2/3 left-1/4"
     },
     {
         "id": "politk",
@@ -147,7 +158,8 @@
             "Gesellschaftswissenschafften"
         ],
         "etage": "1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/4 left-4/5"
     },
     {
         "id": "erdkunde",
@@ -160,7 +172,8 @@
             "Geographie"
         ],
         "etage": "1",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/4 left-4/5"
     },
     {
         "id": "kunst",
@@ -172,7 +185,8 @@
             "Kreativität"
         ],
         "etage": "2",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/2 left-1/4"
     },
     {
         "id": "musik",
@@ -184,7 +198,8 @@
             "Rythmus"
         ],
         "etage": "2",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/4 left-4/6"
     },
     {
         "id": "chemie",
@@ -196,6 +211,7 @@
             "Reagenzglas"
         ],
         "etage": "2",
-        "visited": "false"
+        "visited": "false",
+        "coordinates": "top-1/2 left-1/3"
     }
 ]

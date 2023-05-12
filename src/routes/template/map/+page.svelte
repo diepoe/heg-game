@@ -104,7 +104,7 @@
 		}
 	});
 
-	let rightAnswerChecked: boolean = false;
+	let rightAnswerChecked: boolean = true;
 
 	/**
 	 * shows a toast if the user selects an answer in the quiz
@@ -186,7 +186,7 @@
 	{:else}
 		<TextWrapper>
 			<h2>Ab zum nächsten Raum!</h2>
-			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
+			<p>Um zum nächsten Raum {nextRoom.name} zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
 		</TextWrapper>
 		<ul class="list-disc list-inside text-lg font-grenze px-4">
 			<li class="text-amber-500">Aktueller Raum</li>
@@ -195,10 +195,10 @@
 
 		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
 			<div
-				class="bg-amber-500 shadow shadow-amber-500 w-3 absolute top-1/2 left-1/3 h-3 rounded-full"
+				class={"bg-amber-500 shadow shadow-amber-500 w-3 absolute h-3 rounded-full" + currentRoom.coordinates}
 			/>
 			<div
-				class="bg-teal-500 shadow shadow-teal-500 w-3 absolute top-2/3 left-[20%] h-3 rounded-full"
+				class={"bg-teal-500 shadow shadow-teal-500 w-3 absolute h-3 rounded-full" + nextRoom.coordinates}
 			/>
 		</div>
 

@@ -10,7 +10,7 @@
         ],
         "etage": "-1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-[20%]"
     },
     {
         "id": "schuelerfirma",
@@ -23,19 +23,19 @@
         ],
         "etage": "-1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-[80%]"
     },
     {
         "id": "abimonumente",
         "name": "Abimonumente",
-        "description": "Der Korridor mit den Abimonumnten",
+        "description": "Der Korridor mit den Abimonumenten",
         "hintsToFind": [
             "Abimottos",
             "Oberstufenraum"
         ],
         "etage": "-1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-1/2"
     },
     {
         "id": "pausenhalle_sued",
@@ -49,7 +49,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-[80%]"
     },
     {
         "id": "pausenhalle_nord",
@@ -63,7 +63,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-[35%]"
     },
     {
         "id": "bio",
@@ -77,7 +77,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/3 left-1/2"
     },
     {
         "id": "atrium",
@@ -91,7 +91,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/2 left-1/2"
     },
     {
         "id": "sekretariat",
@@ -104,7 +104,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/3 left-1/4"
     },
     {
         "id": "bibliothek",
@@ -117,7 +117,7 @@
         ],
         "etage": "0",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/2 left-1/4"
     },
     {
         "id": "informatik",
@@ -131,7 +131,7 @@
         ],
         "etage": "1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/2 left-1/3"
     },
     {
         "id": "physik",
@@ -146,7 +146,7 @@
         ],
         "etage": "1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-2/3 left-1/4"
     },
     {
         "id": "politk",
@@ -159,7 +159,7 @@
         ],
         "etage": "1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/4 left-4/5"
     },
     {
         "id": "erdkunde",
@@ -173,7 +173,7 @@
         ],
         "etage": "1",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/4 left-4/5"
     },
     {
         "id": "kunst",
@@ -186,7 +186,7 @@
         ],
         "etage": "2",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/2 left-1/4"
     },
     {
         "id": "musik",
@@ -199,7 +199,7 @@
         ],
         "etage": "2",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/4 left-4/6"
     },
     {
         "id": "chemie",
@@ -212,6 +212,6 @@
         ],
         "etage": "2",
         "visited": "false",
-        "coordinates": ""
+        "coordinates": "top-1/2 left-1/3"
     }
 ]
