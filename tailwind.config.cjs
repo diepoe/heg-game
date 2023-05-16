@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{html,js,svelte,ts,json}'],
+	content: ['./src/**/*.{html,js,svelte,ts}', './src/routes/real/02-game/rooms.json'],
 	theme: {
 		extend: {
 			backgroundImage: {
