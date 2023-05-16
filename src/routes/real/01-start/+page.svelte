@@ -1,5 +1,6 @@
 <script lang="ts">
-	import OnboardingWrapper from '$lib/components/OnboardingWrapper.svelte';
+	import OnboardingWrapper from '$lib/components/onboarding/OnboardingWrapper.svelte';
+	import NextButton from '$lib/components/onboarding/NextButton.svelte';
 
 	/**function checkPermissions(): boolean {
 		if (permissionGranted.includes(false)) {
@@ -9,24 +10,12 @@
 </script>
 
 <OnboardingWrapper delay={true}>
-	<div class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium">
+	<div
+		class="grid place-items-center prose prose-lg prose-invert prose-headings:font-gotisch prose-headings:font-medium"
+	>
 		<h1>Starte das Abenteuer!</h1>
 	</div>
 	<li class="grid place-items-center">
-		<a href="/real/02-game/a-scanner" class="p-4 transform rotate-45 border border-white hover:bg-white group">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="currentColor"
-				class="w-6 h-6 stroke-white transform -rotate-45 group-hover:stroke-primary-500"
-				><path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					d="m11.25 4.5 7.5 7.5-7.5 7.5m-6-15 7.5 7.5-7.5 7.5"
-				/></svg
-			>
-		</a>
+		<NextButton link="/real/02-game/a-scanner" />
 	</li>
 </OnboardingWrapper>
