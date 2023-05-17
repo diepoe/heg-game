@@ -68,7 +68,7 @@
     {
         "id": "bio",
         "name": "Biologietrakt",
-        "description": "Der Seitengang bei den Biologieräumen",
+        "description": "<p>In den Fachräumen des Biologietrakts lernen die Schüler alles mögliche über Themen wie Fotosynthese oder Ökologie.</p>",
         "hintsToFind": [
             "Ausblick zum Atrium",
             "Aquarium",
@@ -82,7 +82,7 @@
     {
         "id": "atrium",
         "name": "Atrium",
-        "description": "Der Garten im Innenhof der Schule",
+        "description": "<p>Der kleine aber feine Garten im Innenhof der Schule. Dieser ist Pausenbereich für die älteren Schüler und hilft insbesondere im Sommer, der gefährlichen Unterrichtswelt für kurze Zeit zu entfliehen.</p>",
         "hintsToFind": [
             "Ernie",
             "Enten",
@@ -96,7 +96,7 @@
     {
         "id": "sekretariat",
         "name": "Sekretariat",
-        "description": "Das Sekretariat",
+        "description": "<p>Das Sekretariat mit den guten Seelen dieser Schule. Hier erhaltet ihr entsprechende Hilfe zu allen möglichen Fragen bezüglich dieser Schule.</p><p><small>Und selbstverständlich auch ein Kühlkissen ;-)</p>",
         "hintsToFind": [
             "Schulleitungsbüros",
             "Krankmeldungen",
@@ -122,7 +122,7 @@
     {
         "id": "informatik",
         "name": "Informatikraum",
-        "description": "Der Informatik Klassenraum",
+        "description": "Der Informatikraum. Hier wurde dieses Spiel im Informatikunterricht entwickelt.",
         "hintsToFind": [
             "Fachraum",
             "Computer",
@@ -135,8 +135,8 @@
     },
     {
         "id": "physik",
-        "name": "Physikraum",
-        "description": "Der Physik Klassenraum",
+        "name": "Physiktrakt",
+        "description": "<p>Die Physik-Fachräume für das eintauchen in die vielfältige Welt der Physik und die Grundlagen unserer Welt.</p>",
         "hintsToFind": [
             "Fachraum",
             "Versuche",
@@ -151,7 +151,7 @@
     {
         "id": "politk",
         "name": "Politikraum",
-        "description": "Der Politik Klassenraum",
+        "description": "Der Politikraum",
         "hintsToFind": [
             "Fachraum",
             "Jugend Debattiert",
@@ -164,7 +164,7 @@
     {
         "id": "erdkunde",
         "name": "Erdkunderaum",
-        "description": "Der Erdkunderaum Klassenraum",
+        "description": "Der Fachrraum für den Erdkundeunterricht.",
         "hintsToFind": [
             "Fachraum",
             "Welkarten",
@@ -177,10 +177,10 @@
     },
     {
         "id": "kunst",
-        "name": "Kunstraum",
-        "description": "Der Kunst Klassenraum",
+        "name": "Kunsttrakt",
+        "description": "<p>Hier sind die Kunsträume, Materialsammlungen und Ateliere unserer Kunstfachschaft zu finden</p>",
         "hintsToFind": [
-            "Fachraum",
+            "Fachräume",
             "Farbe",
             "Kreativität"
         ],
@@ -203,8 +203,8 @@
     },
     {
         "id": "chemie",
-        "name": "Chemie",
-        "description": "Der Chemie Klassenraum",
+        "name": "Chemielabore",
+        "description": "<p>Die Chemielabore für den Chemieunterricht. Hier finden zahlreiche Experimente statt und die Schüler lernen alles über Atome und Elemente</p>",
         "hintsToFind": [
             "Fachraum",
             "Versuche",
