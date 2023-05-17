@@ -80,22 +80,20 @@
 	<h3>Scanne den QR-Code mit Anwählen des farbigen Buttons!</h3>
 </TextWrapper>
 
-
-
 <section class="absolute bottom-6 w-full grid place-items-center">
 	{#if !scanning}
 		<button
 			on:click={() => startScan()}
 			class="w-1/3 p-2 rounded-full text-lg font-grenze bg-primary-600 shadow-lg shadow-primary-600/70 text-white"
 		>
-			Start Scan
+			Scan starten
 		</button>
 	{:else}
 		<button
 			on:click={() => stopScan()}
 			class="w-1/3 p-2 text-lg font-grenze rounded-full bg-red-600 shadow-lg shadow-red-600/70 text-white"
 		>
-			Stop Scan
+			Scan stoppen
 		</button>
 	{/if}
 </section>
