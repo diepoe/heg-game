@@ -96,7 +96,7 @@
     {
         "id": "sekretariat",
         "name": "Sekretariat",
-        "description": "<p>Das Sekretariat mit den guten Seelen dieser Schule. Hier erhaltet ihr entsprechende Hilfe zu allen möglichen Fragen bezüglich dieser Schule.</p><p><small>Und selbstverständlich auch ein Kühlkissen ;-)</p>",
+        "description": "<p>Das Sekretariat mit den guten Seelen dieser Schule. Hier erhaltet ihr entsprechende Hilfe zu allen möglichen Fragen bezüglich dieser Schule.</p><br/><p><small>Und im Notfall selbstverständlich auch ein Kühlkissen ;-)</p>",
         "hintsToFind": [
             "Schulleitungsbüros",
             "Krankmeldungen",
