@@ -204,7 +204,7 @@
     {
         "id": "chemie",
         "name": "Chemielabore",
-        "description": "<p>Die Chemielabore für den Chemieunterricht. Hier finden zahlreiche Experimente statt und die Schüler lernen alles über Atome und Elemente</p>",
+        "description": "<p>Die Chemielabore für den Chemieunterricht. Hier finden zahlreiche Experimente statt und die Schüler lernen alles über Atome und Elemente.</p><br/><p><small>Auch die Geheimnisse diverser Explosionen können in den Laboren ergründet werden ;-)</small></p>",
         "hintsToFind": [
             "Fachraum",
             "Versuche",
