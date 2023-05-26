@@ -42,7 +42,7 @@
 		<TextWrapper inverted={true} className="prose-h1:text-primary-50 prose-a:text-primary-50">
 			<p>
 				Erfahre mehr zur Datenschutzerklärung unter <a href="https://app.heg-uelzen.de/datenschutz">
-					https://app.heg-uelzen.de/datenschutz
+					app.heg-uelzen.de/datenschutz
 				</a>
 			</p>
 		</TextWrapper>
