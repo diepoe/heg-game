@@ -129,57 +129,93 @@
 <div class="p-10 bg-white rounded-xl space-y-2 h-screen overflow-y-scroll w-full">
 	{#if !rightAnswerChecked}
 		<TextWrapper>
-			<h2>Der nächste Raum</h2>
-			<p>hat folgende Eigenschaften:</p>
+			<h2>Der nächste Ort</h2>
+			<p>hat diese Eigenschaften:</p>
 			<ul>
 				{#each nextRoom.hintsToFind as hint}
 					<li>{@html hint}</li>
 				{/each}
 			</ul>
 
-			<p>Welcher der folgenden Räume könnte dafür infrage kommen?</p>
+			<p>Welcher der folgenden Orte ist gesucht?</p>
 		</TextWrapper>
-		<ul class="p-2 mx-2 font-grenze text-lg">
+		<ul class="p-2 mx-2 font-grenze text-lg space-y-4">
 			{#if randomOrder == 0}
-				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+				<li
+					on:keydown
+					on:click={() => showToast(nextRoom.name, true)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
-					{nextRoom.name}
+					<span>{nextRoom.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessOne.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessOne.name}
+					<span>{guessOne.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessTwo.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessTwo.name}
+					<span>{guessTwo.name}</span>
 				</li>
 			{/if}
 			{#if randomOrder == 1}
-				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessOne.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessOne.name}
+					<span>{guessOne.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+				<li
+					on:keydown
+					on:click={() => showToast(nextRoom.name, true)}
+					class="flex items-center space-x-4"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
-					{nextRoom.name}
+					<span>{nextRoom.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessTwo.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessTwo.name}
+					<span>{guessTwo.name}</span>
 				</li>
 			{/if}
 			{#if randomOrder == 2}
-				<li on:keydown on:click={() => showToast(guessTwo.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessTwo.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessTwo.name}
+					<span>{guessTwo.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(guessOne.name, false)}>
+				<li
+					on:keydown
+					on:click={() => showToast(guessOne.name, false)}
+					class="flex items-center space-x-3"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
-					{guessOne.name}
+					<span>{guessOne.name}</span>
 				</li>
-				<li on:keydown on:click={() => showToast(nextRoom.name, true)}>
+				<li
+					on:keydown
+					on:click={() => showToast(nextRoom.name, true)}
+					class="flex items-center space-x-4"
+				>
 					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
-					{nextRoom.name}
+					<span>{nextRoom.name}</span>
 				</li>
 			{/if}
 		</ul>
