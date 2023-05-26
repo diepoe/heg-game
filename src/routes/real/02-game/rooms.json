@@ -131,7 +131,7 @@
         ],
         "etage": "1",
         "visited": "false",
-        "coordinates": "top-[38%] left-[30%]"
+        "coordinates": "top-[34%] left-[30%]"
     },
     {
         "id": "physik",
@@ -212,6 +212,6 @@
         ],
         "etage": "2",
         "visited": "false",
-        "coordinates": "top-[38%] left-1/3"
+        "coordinates": "top-[35%] left-[28%]"
     }
 ]
