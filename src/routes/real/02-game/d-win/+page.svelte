@@ -24,35 +24,29 @@
 	</div>
 
 	<div class="flex justify-around w-full">
-		<div
+		<div on:keydown
 			on:click={() => setbgURL("bg-[url('/bg/hexagons-yellow.svg')]")}
 			class="bg-amber-500 h-8 w-8 rotate-45 shadow-amber-500 shadow-md "
 		/>
-		<div
+		<div on:keydown
 			on:click={() => setbgURL("bg-[url('/bg/church-green.svg')]")}
 			class="bg-emerald-500 h-8 w-8 rotate-45 shadow-emerald-500 shadow-md "
 		/>
 		<div
-			class="bg-transparent h-8 w-8 rotate-45 flex justify-center align-center border-6"
+			class="bg-transparent h-8 w-8 rotate-45 flex justify-center items-center border-6"
 		>
 			<div class="-rotate-45">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="32"
-					height="32"
-					fill="#000000"
-					viewBox="0 0 256 256"
-					><path
-						d="M216,112v96a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V112A16,16,0,0,1,56,96H80a8,8,0,0,1,0,16H56v96H200V112H176a8,8,0,0,1,0-16h24A16,16,0,0,1,216,112ZM93.66,69.66,120,43.31V136a8,8,0,0,0,16,0V43.31l26.34,26.35a8,8,0,0,0,11.32-11.32l-40-40a8,8,0,0,0-11.32,0l-40,40A8,8,0,0,0,93.66,69.66Z"
-					/></svg
-				>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+				  </svg>
+				  
 			</div>
 		</div>
-		<div
+		<div on:keydown
 			on:click={() => setbgURL("bg-[url('/bg/church-pink.svg')]")}
 			class="bg-pink-500 h-8 w-8 rotate-45 shadow-pink-500 shadow-md "
 		/>
-		<div
+		<div on:keydown
 			on:click={() => setbgURL("bg-[url('/bg/church.svg')]")}
 			class="bg-stone-500 h-8 w-8 rotate-45 shadow-stone-500 shadow-md "
 		/>
