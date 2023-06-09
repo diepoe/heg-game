@@ -2,7 +2,7 @@
     {
         "id": "cafeteria",
         "name": "Cafeteria",
-        "description": "<p>Die Cafeteria. Hier kannst du in den Pausen Snacks kaufen oder in den Mittagspausen sogar ganze Mahlzeiten.<p/><br/><p><small>Das Entwicklungsteam kann das sogenannte Nuggetbrötchen nur empfehlen!</small><p/>",
+        "description": "<p>Die Cafeteria. Hier kannst du in den Pausen Snacks kaufen oder in den Mittagspausen sogar ganze Mahlzeiten.<p/><br/><p><small>Das Entwicklungsteam kann das sogenannte Nuggetbrötchen nur empfehlen! 😋</small><p/>",
         "hintsToFind": [
             "Essen",
             "Mittagspause",
@@ -40,7 +40,7 @@
     {
         "id": "pausenhalle_sued",
         "name": "Pausenhalle Süd",
-        "description": "<p>Die südliche Pausenhalle. Hier kannst du dich in Regenpusen aufhalten<p/><br/><p><small>Übrigens befindet sich in der hinteren Ecke der Pausenhalle auch ein Tischkicker ;-)</small><p/>",
+        "description": "<p>Die südliche Pausenhalle. Hier kannst du dich in Regenpausen aufhalten<p/><br/><p><small>Übrigens befindet sich in der hinteren Ecke der Pausenhalle auch ein Tischkicker ;-)</small><p/>",
         "hintsToFind": [
             "Jungstoilette",
             "Kunstvitrinen",
@@ -136,7 +136,7 @@
     {
         "id": "physik",
         "name": "Physiktrakt",
-        "description": "<p>Die Physik-Fachräume für das eintauchen in die vielfältige Welt der Physik und die Grundlagen unserer Welt.</p>",
+        "description": "<p>Die Physik-Fachräume für das Eintauchen in die vielfältige Welt der Physik und die Grundlagen unserer Welt.</p>",
         "hintsToFind": [
             "Fachraum",
             "Versuche",
@@ -164,7 +164,7 @@
     {
         "id": "erdkunde",
         "name": "Erdkunderaum",
-        "description": "<p>Der Fachrraum für den Erdkundeunterricht. Hier wirst du ineressante Dinge über unsere Welt lernen!<p/>",
+        "description": "<p>Der Fachrraum für den Erdkundeunterricht. Hier wirst du interessante Dinge über unsere Welt lernen! Auch deine Orientierungsskills erhalten hier die nötige Unterstützung.<p/>",
         "hintsToFind": [
             "Fachraum",
             "Welkarten",
