@@ -12,7 +12,7 @@
 		name: 'null',
 		description: 'null',
 		hintsToFind: [],
-		etage: 'null',
+		etage: '1',
 		visited: 'null',
 		coordinates: ''
 	};
@@ -22,7 +22,7 @@
 		name: 'null',
 		description: 'null',
 		hintsToFind: [],
-		etage: 'null',
+		etage: '0',
 		visited: 'null',
 		coordinates: ''
 	};
@@ -225,8 +225,25 @@
 			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
 		</TextWrapper>
 		<ul class="list-disc list-inside text-lg font-grenze px-4">
-			<li class="text-amber-500">Aktueller Raum</li>
-			<li class="text-teal-500">Nächster Raum</li>
+			<li class="text-amber-500">Aktueller Raum (Im {#if currentRoom.etage == '-1'}
+				Keller
+			{:else if currentRoom.etage == '0'}
+				Erdgeschoss
+			{:else if currentRoom.etage == '1'}
+				1. Obergeschoss
+			{:else if currentRoom.etage == '2'}
+				2. Obergeschoss
+			{/if})</li>
+			<li class="text-teal-500">Nächster Raum (Im {#if nextRoom.etage == '-1'}
+				Keller
+			{:else if nextRoom.etage == '0'}
+				Erdgeschoss
+			{:else if nextRoom.etage == '1'}
+				1. Obergeschoss
+			{:else if nextRoom.etage == '2'}
+				2. Obergeschoss
+			{/if})</li>
+			
 		</ul>
 
 		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
