@@ -41,4 +41,10 @@
     <!-- camera permission for qr-code scanning-->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <!-- media permissions-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 </manifest>
