@@ -2,7 +2,7 @@
     {
         "id": "cafeteria",
         "name": "Cafeteria",
-        "description": "Die Cafeteria",
+        "description": "<p>Die Cafeteria. Hier kannst du in den Pausen Snacks kaufen oder in den Mittagspausen sogar ganze Mahlzeiten.<p/><br/><p><small>Das Entwicklungsteam kann das sogenannte Nuggetbrötchen nur empfehlen!</small><p/>",
         "hintsToFind": [
             "Essen",
             "Mittagspause",
@@ -15,7 +15,7 @@
     {
         "id": "schuelerfirma",
         "name": "Schülerfirma",
-        "description": "Die Schülerfirma",
+        "description": "Die Schülerfirma. Hier werden Pullover und andere Kleidungsstücke vom HEG angefertigt. Du kannst frewiwillig der AG beitreten, um dabei zu helfen.",
         "hintsToFind": [
             "Schülerzeitung",
             "HEG-Shop",
@@ -28,7 +28,7 @@
     {
         "id": "abimonumente",
         "name": "Abimonumente",
-        "description": "Der Korridor mit den Abimonumnten",
+        "description": "Der Korridor mit den Abimonumnten. Wenn du in ein paar Jahren dein Abitur absolviert hast, wird dein Jahrgang hier verewigt.",
         "hintsToFind": [
             "Abimottos",
             "Oberstufenraum"
@@ -40,7 +40,7 @@
     {
         "id": "pausenhalle_sued",
         "name": "Pausenhalle Süd",
-        "description": "Die südliche Pausenhalle",
+        "description": "<p>Die südliche Pausenhalle. Hier kannst du dich in Regenpusen aufhalten<p/><br/><p><small>Übrigens befindet sich in der hinteren Ecke der Pausenhalle auch ein Tischkicker ;-)</small><p/>",
         "hintsToFind": [
             "Jungstoilette",
             "Kunstvitrinen",
@@ -54,7 +54,7 @@
     {
         "id": "pausenhalle_nord",
         "name": "Pausenhalle Nord",
-        "description": "Die nördliche Pausenhalle",
+        "description": "Die nördliche Pausenhalle. Hier findest du den Vertretungsplan, wo du herausfinden kannst, ob einer deiner Lehrer krank ist. Außerdem kannst du dich bei Regen dort in den Pausen aufhalten",
         "hintsToFind": [
             "Vertretungsplan",
             "Mensaautomat",
@@ -68,7 +68,7 @@
     {
         "id": "bio",
         "name": "Biologietrakt",
-        "description": "<p>In den Fachräumen des Biologietrakts lernen die Schüler alles mögliche über Themen wie Fotosynthese oder Ökologie.</p>",
+        "description": "<p>In den Fachräumen des Biologietrakts lernen die Schüler alles mögliche über Themen wie Fotosynthese oder Ökologie. Wenn du dich für Natur und Mensch interessierst, wird Biologie genau dein Fach!</p>",
         "hintsToFind": [
             "Ausblick zum Atrium",
             "Aquarium",
@@ -122,7 +122,7 @@
     {
         "id": "informatik",
         "name": "Informatikraum",
-        "description": "Der Informatikraum. Hier wurde dieses Spiel im Informatikunterricht entwickelt.",
+        "description": "Der Informatikraum. Hier wurde dieses Spiel im Informatikunterricht entwickelt. Auch du kannst ab der Klassenstufe 11 hier spannende Spiele programmieren!",
         "hintsToFind": [
             "Fachraum",
             "Computer",
@@ -151,7 +151,7 @@
     {
         "id": "politk",
         "name": "Politikraum",
-        "description": "Der Politikraum",
+        "description": "Der Politikraum. In diesem Fachraum wirst du mit deinen Mitschülern über aktuelle Themen diskutieren.",
         "hintsToFind": [
             "Fachraum",
             "Jugend Debattiert",
@@ -164,7 +164,7 @@
     {
         "id": "erdkunde",
         "name": "Erdkunderaum",
-        "description": "Der Fachrraum für den Erdkundeunterricht.",
+        "description": "<p>Der Fachrraum für den Erdkundeunterricht. Hier wirst du ineressante Dinge über unsere Welt lernen!<p/>",
         "hintsToFind": [
             "Fachraum",
             "Welkarten",
@@ -178,7 +178,7 @@
     {
         "id": "kunst",
         "name": "Kunsttrakt",
-        "description": "<p>Hier sind die Kunsträume, Materialsammlungen und Ateliere unserer Kunstfachschaft zu finden</p>",
+        "description": "<p>Hier sind die Kunsträume, Materialsammlungen und Ateliere unserer Kunstfachschaft zu finden.</p><br/><p><small>Zukünftig könnten auch Werke von dir hier entstehen!</small></p>",
         "hintsToFind": [
             "Fachräume",
             "Farbe",
