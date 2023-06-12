@@ -58,9 +58,6 @@
 			<h1>Gratulation</h1>
 			<p>Du hast die gefahrvollen Unterrichtswelten überstanden und die Direktorin befreit!</p>
 			<p>Deiner heldenhaften Reise zu dank wurden die Unruhen des LeG-Ordens vertrieben!</p>
-
-			<p><a href="/real/01-start"><b>Eine neue Runde starten</b></a></p>
-			<p><a href="/"><b>Zum Hauptmenü</b></a></p>
 		</TextWrapper>
 	</div>
 
@@ -77,7 +74,7 @@
 		/>
 		<button
 			on:click={() => shareResult()}
-			class="bg-transparent h-8 w-8 rotate-45 flex justify-center items-center border-6"
+			class="bg-transparent h-8 w-8 rotate-45 flex justify-center items-center border-primary-950 border-6 invisible"
 		>
 			<div class="-rotate-45">
 				<svg
