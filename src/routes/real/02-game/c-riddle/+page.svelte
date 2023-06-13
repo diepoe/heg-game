@@ -178,7 +178,7 @@
 				<li
 					on:keydown
 					on:click={() => showToast(nextRoom.name, true)}
-					class="flex items-center space-x-4"
+					class="flex items-center space-x-3"
 				>
 					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					<span>{nextRoom.name}</span>
@@ -212,7 +212,7 @@
 				<li
 					on:keydown
 					on:click={() => showToast(nextRoom.name, true)}
-					class="flex items-center space-x-4"
+					class="flex items-center space-x-3"
 				>
 					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					<span>{nextRoom.name}</span>
