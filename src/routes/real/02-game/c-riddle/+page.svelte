@@ -111,7 +111,11 @@
 	 * @param roomname the roomname the toast message is displaying
 	 * @param correct manipulates the toast to say 'right' or 'wrong' answer
 	 */
-	function showToast(roomname: string, correct: boolean) {
+	function showToast(roomname: string, correct: boolean, checkboxID: string) {
+		if (document.getElementById(checkboxID) != undefined) {
+			document.getElementById(checkboxID)!.checked = true;
+		}
+
 		let antwort: string = '';
 		if (correct == true) {
 			setTimeout(() => (rightAnswerChecked = true), 2000);
@@ -143,78 +147,78 @@
 			{#if randomOrder == 0}
 				<li
 					on:keydown
-					on:click={() => showToast(nextRoom.name, true)}
+					on:click={() => showToast(nextRoom.name, true, 'cb1')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
+					<input type="checkbox" id="cb1" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					<span>{nextRoom.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(guessOne.name, false)}
+					on:click={() => showToast(guessOne.name, false, 'cb2')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb2"class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessOne.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(guessTwo.name, false)}
+					on:click={() => showToast(guessTwo.name, false, 'cb3')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb3" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessTwo.name}</span>
 				</li>
 			{/if}
 			{#if randomOrder == 1}
 				<li
 					on:keydown
-					on:click={() => showToast(guessOne.name, false)}
+					on:click={() => showToast(guessOne.name, false, 'cb4')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb4" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessOne.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(nextRoom.name, true)}
+					on:click={() => showToast(nextRoom.name, true, 'cb5')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
+					<input type="checkbox" id="cb5" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					<span>{nextRoom.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(guessTwo.name, false)}
+					on:click={() => showToast(guessTwo.name, false, 'cb6')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb6" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessTwo.name}</span>
 				</li>
 			{/if}
 			{#if randomOrder == 2}
 				<li
 					on:keydown
-					on:click={() => showToast(guessTwo.name, false)}
+					on:click={() => showToast(guessTwo.name, false, 'cb7')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb7" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessTwo.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(guessOne.name, false)}
+					on:click={() => showToast(guessOne.name, false, 'cb8')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-red-600 w-6 h-6" />
+					<input type="checkbox" id="cb8" class="form-checkbox rounded text-red-600 w-6 h-6" />
 					<span>{guessOne.name}</span>
 				</li>
 				<li
 					on:keydown
-					on:click={() => showToast(nextRoom.name, true)}
+					on:click={() => showToast(nextRoom.name, true, 'cb9')}
 					class="flex items-center space-x-3"
 				>
-					<input type="checkbox" class="form-checkbox rounded text-green-600 w-6 h-6" />
+					<input type="checkbox" id="cb9" class="form-checkbox rounded text-green-600 w-6 h-6" />
 					<span>{nextRoom.name}</span>
 				</li>
 			{/if}
@@ -225,25 +229,28 @@
 			<p>Um zum nächsten Raum zu gelangen, kannst du folgende Übersicht zur Hilfe benutzen:</p>
 		</TextWrapper>
 		<ul class="list-disc list-inside text-lg font-grenze px-4">
-			<li class="text-amber-500">Aktueller Raum (Im {#if currentRoom.etage == '-1'}
-				Keller
-			{:else if currentRoom.etage == '0'}
-				Erdgeschoss
-			{:else if currentRoom.etage == '1'}
-				1. Obergeschoss
-			{:else if currentRoom.etage == '2'}
-				2. Obergeschoss
-			{/if})</li>
-			<li class="text-teal-500">Nächster Raum (Im {#if nextRoom.etage == '-1'}
-				Keller
-			{:else if nextRoom.etage == '0'}
-				Erdgeschoss
-			{:else if nextRoom.etage == '1'}
-				1. Obergeschoss
-			{:else if nextRoom.etage == '2'}
-				2. Obergeschoss
-			{/if})</li>
-			
+			<li class="text-amber-500">
+				Aktueller Raum (Im {#if currentRoom.etage == '-1'}
+					Keller
+				{:else if currentRoom.etage == '0'}
+					Erdgeschoss
+				{:else if currentRoom.etage == '1'}
+					1. Obergeschoss
+				{:else if currentRoom.etage == '2'}
+					2. Obergeschoss
+				{/if})
+			</li>
+			<li class="text-teal-500">
+				Nächster Raum (Im {#if nextRoom.etage == '-1'}
+					Keller
+				{:else if nextRoom.etage == '0'}
+					Erdgeschoss
+				{:else if nextRoom.etage == '1'}
+					1. Obergeschoss
+				{:else if nextRoom.etage == '2'}
+					2. Obergeschoss
+				{/if})
+			</li>
 		</ul>
 
 		<div class="w-full h-[30vh] relative bg-map bg-contain bg-center bg-no-repeat">
