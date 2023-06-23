@@ -31,7 +31,8 @@
         "description": "Der Korridor mit den Abimonumnten. Wenn du in ein paar Jahren dein Abitur absolviert hast, wird dein Jahrgang hier verewigt.",
         "hintsToFind": [
             "Abimottos",
-            "Oberstufenraum"
+            "Oberstufenraum",
+            "Kellerdurchgang"
         ],
         "etage": "-1",
         "visited": "false",
@@ -182,7 +183,8 @@
         "hintsToFind": [
             "Fachräume",
             "Farbe",
-            "Kreativität"
+            "Kreativität",
+            "Malen"
         ],
         "etage": "2",
         "visited": "false",
@@ -195,7 +197,8 @@
         "hintsToFind": [
             "Fachraum",
             "Instrumente",
-            "Rythmus"
+            "Rythmus",
+            "Noten"
         ],
         "etage": "2",
         "visited": "false",
