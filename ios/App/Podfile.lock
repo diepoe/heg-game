@@ -18,13 +18,13 @@ PODS:
   - SDWebImage/Core (5.21.7)
 
 DEPENDENCIES:
-  - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.4.2/node_modules/@capacitor/ios`)"
-  - "CapacitorCommunityBarcodeScanner (from `../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@8.4.2/node_modules/@capacitor-community/barcode-scanner`)"
-  - "CapacitorCommunityMedia (from `../../node_modules/.pnpm/@capacitor-community+media@9.1.0_@capacitor+core@8.4.2/node_modules/@capacitor-community/media`)"
-  - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.4.2/node_modules/@capacitor/ios`)"
-  - "CapacitorDialog (from `../../node_modules/.pnpm/@capacitor+dialog@8.0.1_@capacitor+core@8.4.2/node_modules/@capacitor/dialog`)"
-  - "CapacitorHaptics (from `../../node_modules/.pnpm/@capacitor+haptics@8.0.2_@capacitor+core@8.4.2/node_modules/@capacitor/haptics`)"
-  - "CapacitorToast (from `../../node_modules/.pnpm/@capacitor+toast@8.0.1_@capacitor+core@8.4.2/node_modules/@capacitor/toast`)"
+  - "Capacitor (from `../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.5.0/node_modules/@capacitor/ios`)"
+  - "CapacitorCommunityBarcodeScanner (from `../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@8.5.0/node_modules/@capacitor-community/barcode-scanner`)"
+  - "CapacitorCommunityMedia (from `../../node_modules/.pnpm/@capacitor-community+media@9.1.0_@capacitor+core@8.5.0/node_modules/@capacitor-community/media`)"
+  - "CapacitorCordova (from `../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.5.0/node_modules/@capacitor/ios`)"
+  - "CapacitorDialog (from `../../node_modules/.pnpm/@capacitor+dialog@8.0.1_@capacitor+core@8.5.0/node_modules/@capacitor/dialog`)"
+  - "CapacitorHaptics (from `../../node_modules/.pnpm/@capacitor+haptics@8.0.2_@capacitor+core@8.5.0/node_modules/@capacitor/haptics`)"
+  - "CapacitorToast (from `../../node_modules/.pnpm/@capacitor+toast@8.0.1_@capacitor+core@8.5.0/node_modules/@capacitor/toast`)"
 
 SPEC REPOS:
   trunk:
@@ -32,19 +32,19 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Capacitor:
-    :path: "../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.4.2/node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.5.0/node_modules/@capacitor/ios"
   CapacitorCommunityBarcodeScanner:
-    :path: "../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@8.4.2/node_modules/@capacitor-community/barcode-scanner"
+    :path: "../../node_modules/.pnpm/@capacitor-community+barcode-scanner@4.0.1_@capacitor+core@8.5.0/node_modules/@capacitor-community/barcode-scanner"
   CapacitorCommunityMedia:
-    :path: "../../node_modules/.pnpm/@capacitor-community+media@9.1.0_@capacitor+core@8.4.2/node_modules/@capacitor-community/media"
+    :path: "../../node_modules/.pnpm/@capacitor-community+media@9.1.0_@capacitor+core@8.5.0/node_modules/@capacitor-community/media"
   CapacitorCordova:
-    :path: "../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.4.2/node_modules/@capacitor/ios"
+    :path: "../../node_modules/.pnpm/@capacitor+ios@8.4.2_@capacitor+core@8.5.0/node_modules/@capacitor/ios"
   CapacitorDialog:
-    :path: "../../node_modules/.pnpm/@capacitor+dialog@8.0.1_@capacitor+core@8.4.2/node_modules/@capacitor/dialog"
+    :path: "../../node_modules/.pnpm/@capacitor+dialog@8.0.1_@capacitor+core@8.5.0/node_modules/@capacitor/dialog"
   CapacitorHaptics:
-    :path: "../../node_modules/.pnpm/@capacitor+haptics@8.0.2_@capacitor+core@8.4.2/node_modules/@capacitor/haptics"
+    :path: "../../node_modules/.pnpm/@capacitor+haptics@8.0.2_@capacitor+core@8.5.0/node_modules/@capacitor/haptics"
   CapacitorToast:
-    :path: "../../node_modules/.pnpm/@capacitor+toast@8.0.1_@capacitor+core@8.4.2/node_modules/@capacitor/toast"
+    :path: "../../node_modules/.pnpm/@capacitor+toast@8.0.1_@capacitor+core@8.5.0/node_modules/@capacitor/toast"
 
 SPEC CHECKSUMS:
   Capacitor: 52f999235b8bd6a7d01694753f4f4d54d182e3a3
@@ -56,6 +56,6 @@ SPEC CHECKSUMS:
   CapacitorToast: 408036fbd702120d3adde3980b740f3c0fb60c9e
   SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
 
-PODFILE CHECKSUM: 836c308b90d6ce7bbf261fc18671cd65ba95dfe1
+PODFILE CHECKSUM: 949ef0750e8d55a0e0898c45656252825caf90c4
 
 COCOAPODS: 1.17.0
